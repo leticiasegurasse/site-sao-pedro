@@ -44,7 +44,7 @@ const equipamentos = [
       "Super bitrem (3+3 eixos)"
     ],
     likes: 4,
-    destaque: true
+    destaque: false
   },
   {
     nome: "Carreta Graneleira",
@@ -265,7 +265,7 @@ const equipamentos = [
       "3 eixos juntos"
     ],
     likes: 5,
-    destaque: false
+    destaque: true
   }
 ];
 

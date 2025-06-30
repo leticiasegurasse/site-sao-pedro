@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
 import Container from './Container';
+import TopBar from './TopBar';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,10 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-999 border-b-4 border-red-600">
+      {/* TopBar */}
+      <TopBar />
+      
+      {/* Navegação Principal */}
       <nav className="py-4">
         <Container>
           <div className="flex justify-between items-center">
