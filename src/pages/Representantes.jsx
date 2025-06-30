@@ -1,7 +1,8 @@
 import React from 'react';
 import MainLayout from '../layouts/MainLayout';
 import ContatoSection from '../components/ContatoSection';
-import BrazilMap from '../components/BrazilMap';
+import BrazilMapInteractive from '../components/BrazilMapInteractive';
+
 
 const Representantes = () => {
   return (
@@ -18,11 +19,12 @@ const Representantes = () => {
         </div>
       </div>
 
-      <BrazilMap />
+      {/* Mapa Interativo */}
+      <BrazilMapInteractive />
 
       <ContatoSection />
     </MainLayout>
   );
 };
 
-export default Representantes; 
+export default Representantes;
