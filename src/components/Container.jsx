@@ -7,7 +7,7 @@ const Container = ({ children, className = '', fullWidth = false, noPadding = fa
   
   const paddingClasses = noPadding 
     ? '' 
-    : 'px-4 sm:px-6 lg:px-8'; 
+    : 'px-4 sm:px-6 lg:px-8';
 
   return (
     <div className={`${baseClasses} ${paddingClasses} ${className}`}>
