@@ -29,7 +29,9 @@ const EquipamentoDetalhe = () => {
       {/* Breadcrumb */}
       <div className="bg-[#e30613] p-4 sm:p-5 flex items-center gap-2 text-white text-base sm:text-lg font-light">
         <Container fullWidth>
-          <span>Equipamentos</span>
+          <a href={`/equipamentos/`}>
+            <span>Equipamentos</span> 
+          </a>
           <span className="mx-1">/</span>
           <span className="font-bold italic">{equipamento.nome}</span>
         </Container>

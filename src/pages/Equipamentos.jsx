@@ -22,16 +22,17 @@ const ArrowRight = (props) => (
 const Equipamentos = () => {
   return (
     <MainLayout>
-      <section className="bg-[#e30613] text-white flex flex-col items-center justify-center min-h-[50vh] sm:min-h-[60vh] text-center w-full">
+      <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16 sm:py-20">
         <Container>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold m-0">
-            Melhores equipamentos
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mt-6 sm:mt-8 font-normal">
-            Onde o melhor para sua empresa está!
-          </p>
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Melhores equipamentos</h1>
+            <div className="w-32 h-1 bg-white mx-auto mb-6 rounded" />
+            <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
+              Onde o melhor para sua empresa está!
+            </p>
+          </div>
         </Container>
-      </section>
+      </div>
       
       <section className="w-full py-12 sm:py-16">
         <Container>

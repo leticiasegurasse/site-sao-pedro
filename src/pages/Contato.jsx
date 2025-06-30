@@ -7,14 +7,17 @@ const contatos = [
   {
     title: 'Telefone',
     description: '(032) 3696-4444',
+    link: 'tel:03236964444'
   },
   {
     title: 'Email',
     description: 'vendas@saopedro.ind.br',
+    link:'mailto:vendas@saopedro.end.br'
   },
   {
     title: 'Sede',
     description: 'Rodovia BR 116, Km 710, Bairro Santa Helena, Muriaé-MG - CEP 36884-255',
+    link: 'https://maps.app.goo.gl/BkwXiBBJndAQGnYZ9'
   },
 ];
 
@@ -29,11 +32,17 @@ const Contato = () => {
           <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-4 lg:gap-6">
             {contatos.map((contato, idx) => (
               <div key={idx} className="w-full max-w-sm lg:max-w-none lg:flex-1">
-                <ContatoCard
-                  title={contato.title}
-                  description={contato.description}
-                />
-              </div>
+  <a 
+    href={contato.link} 
+    target={contato.title === "Sede" ? "_blank" : "_self"} 
+    rel={contato.title === "Sede" ? "noopener noreferrer" : undefined}
+  >
+    <ContatoCard
+      title={contato.title}
+      description={contato.description}
+    />
+  </a>
+</div>
             ))}
           </div>
         </div>

@@ -5,7 +5,9 @@ import Container from '../components/Container';
 
 const SobreEmpresa = () => {
   return (
+    
     <MainLayout>
+
       {/* Hero Section com Container */}
       <div className="relative w-full">
         <img 
@@ -15,14 +17,13 @@ const SobreEmpresa = () => {
         />
         <div className="absolute inset-0 flex items-center">
           <Container>
-            <div className="text-white">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold italic mb-4 drop-shadow-lg">
-                A empresa
-              </h1>
-              <p className="text-lg sm:text-xl md:text-2xl drop-shadow-lg">
-                Conheça um pouco sobre<br />a nossa história
-              </p>
-            </div>
+            <div className="text-center text-white">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">A empresa</h1>
+            <div className="w-32 h-1 bg-white mx-auto mb-6 rounded" />
+            <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
+              Conheça um pouco sobre a nossa história
+            </p>
+          </div>
           </Container>
         </div>
       </div>
@@ -35,7 +36,7 @@ const SobreEmpresa = () => {
               <img 
                 src="/images/soldador.png" 
                 alt="Soldador trabalhando" 
-                className="w-full h-full object-cover max-h-[500px]"
+                className="w-full h-full object-cover max-h-[550px]"
               />
             </div>
             <div className="w-full lg:w-1/2">
