@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Container from './Container';
+import OptimizedImage from '../components/OptimizedImage';
 
 const LocalizacoesSection = () => {
   return (
@@ -19,21 +20,21 @@ const LocalizacoesSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 py-12 md:py-0 md:h-[400px]">
           <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left mb-8 md:mb-0 md:pl-10">
             <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight">
-              Estamos por<br/>todo o país
+              Estamos por<br />todo o país
             </h2>
-            <Link 
-              to="/representantes" 
+            <Link
+              to="/representantes"
               className="bg-white text-red-600 font-bold px-6 md:px-8 py-3 rounded transition hover:bg-gray-100 w-max text-base md:text-lg shadow-lg"
             >
               Ver representantes
             </Link>
           </div>
           <div className="w-full md:w-7/12 flex justify-center relative z-10">
-            <OptimizedImage 
-              src="/images/map.svg" 
-              alt="Mapa do Brasil" 
-              className="w-full h-auto drop-shadow-xl mt-0 md:mt-10 max-w-md md:max-w-none" 
-              draggable="false" 
+            <OptimizedImage
+              src="/images/map.svg"
+              alt="Mapa do Brasil"
+              className="w-full h-auto drop-shadow-xl mt-0 md:mt-10 max-w-md md:max-w-none"
+              draggable="false"
             />
           </div>
         </div>

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, MapPin, Clock, Home, Building2, Truck } from 'lucide-react';
 import Container from './Container';
 import TopBar from './TopBar';
+import OptimizedImage from '../components/OptimizedImage';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,36 +56,36 @@ const Header = () => {
     <header className="bg-white shadow-md fixed w-full top-0 z-50 border-b-4 border-red-600">
       {/* TopBar */}
       <TopBar />
-      
+
       {/* Navegação Principal */}
       <nav className="py-3 md:py-4">
         <Container>
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="relative z-50">
-              <OptimizedImage 
-                src="/images/logo.png" 
-                alt="Logo" 
-                className="h-7 sm:h-8 md:h-10 transition-all duration-200 hover:scale-105" 
+              <OptimizedImage
+                src="/images/logo.png"
+                alt="Logo"
+                className="h-7 sm:h-8 md:h-10 transition-all duration-200 hover:scale-105"
               />
             </Link>
-            
+
             {/* Menu Desktop */}
             <div className="hidden md:flex space-x-6 lg:space-x-8">
               {menuItems.map((item) => (
-                <Link 
+                <Link
                   key={item.path}
-                  to={item.path} 
+                  to={item.path}
                   className={`
                     relative transition-all duration-300 text-sm lg:text-base font-medium
-                    ${isActive(item.path) 
-                      ? 'text-red-600' 
+                    ${isActive(item.path)
+                      ? 'text-red-600'
                       : 'text-gray-800 hover:text-red-600'
                     }
                     after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-red-600
                     after:transition-all after:duration-300
-                    ${isActive(item.path) 
-                      ? 'after:w-full' 
+                    ${isActive(item.path)
+                      ? 'after:w-full'
                       : 'after:w-0 hover:after:w-full'
                     }
                   `}
@@ -95,7 +96,7 @@ const Header = () => {
             </div>
 
             {/* Botão Menu Mobile */}
-            <button 
+            <button
               className="md:hidden relative z-50 p-2 -mr-2 text-gray-800 hover:text-red-600 transition-colors"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
@@ -103,16 +104,16 @@ const Header = () => {
             >
               <div className="relative w-6 h-6">
                 {/* Ícone Menu */}
-                <Menu 
-                  size={24} 
+                <Menu
+                  size={24}
                   className={`
                     absolute inset-0 transition-all duration-300 transform
                     ${isMenuOpen ? 'rotate-90 opacity-0 scale-75' : 'rotate-0 opacity-100 scale-100'}
                   `}
                 />
                 {/* Ícone X */}
-                <X 
-                  size={24} 
+                <X
+                  size={24}
                   className={`
                     absolute inset-0 transition-all duration-300 transform
                     ${isMenuOpen ? 'rotate-0 opacity-100 scale-100' : '-rotate-90 opacity-0 scale-75'}
@@ -124,7 +125,7 @@ const Header = () => {
         </Container>
 
         {/* Overlay Mobile */}
-        <div 
+        <div
           className={`
             md:hidden fixed inset-0 bg-black transition-opacity duration-300 z-998
             ${isMenuOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'}
@@ -134,7 +135,7 @@ const Header = () => {
         />
 
         {/* Menu Mobile */}
-        <div 
+        <div
           className={`
             md:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-999
             transform transition-transform duration-300 ease-in-out
@@ -151,14 +152,14 @@ const Header = () => {
             {menuItems.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <Link 
+                <Link
                   key={item.path}
-                  to={item.path} 
+                  to={item.path}
                   className={`
                     flex items-center px-6 py-4 text-base font-medium transition-all duration-200
                     border-l-4 border-transparent
-                    ${isActive(item.path) 
-                      ? 'text-red-600 bg-red-50 border-red-600' 
+                    ${isActive(item.path)
+                      ? 'text-red-600 bg-red-50 border-red-600'
                       : 'text-gray-700 hover:text-red-600 hover:bg-gray-50 hover:border-red-300'
                     }
                   `}
@@ -167,8 +168,8 @@ const Header = () => {
                   }}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <IconComponent 
-                    className="mr-3 w-5 h-5" 
+                  <IconComponent
+                    className="mr-3 w-5 h-5"
                     strokeWidth={1.5}
                   />
                   {item.label}

@@ -3,10 +3,10 @@ import React from 'react';
 const VideoSection = () => {
   return (
     <section className="w-full">
-      <video 
-        autoPlay 
-        loop 
-        muted 
+      <video
+        autoPlay
+        loop
+        muted
         playsInline
         className="w-full h-auto"
       >

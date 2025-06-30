@@ -3,7 +3,7 @@ const equipamentos = [
     nome: "Base Carvoeira",
     imagens: [
       "/images/base-carvoeira1.jpg",
-      "/images/base-carvoeira2.jpg", 
+      "/images/base-carvoeira2.jpg",
       "/images/base-carvoeira3.jpg"
     ],
     informacoesTecnicas: [
@@ -83,7 +83,7 @@ const equipamentos = [
     ],
     versoes: [
       "2 eixos juntos",
-      "2 eixos distanciados", 
+      "2 eixos distanciados",
       "3 eixos juntos",
       "3 eixos distanciados",
       "2 eixos distanciados (pequena)",
@@ -131,7 +131,7 @@ const equipamentos = [
     versoes: [
       "2 eixos juntos",
       "2 eixos distanciados",
-      "3 eixos juntos", 
+      "3 eixos juntos",
       "3 eixos distanciados",
       "2 eixos distanciados (pequena)",
       "Bitrem (2+2 eixos)",
@@ -179,7 +179,7 @@ const equipamentos = [
       "2 eixos juntos",
       "2 eixos distanciados",
       "3 eixos juntos",
-      "3 eixos distanciados", 
+      "3 eixos distanciados",
       "2 eixos distanciados (pequena)",
       "Bitrem (2+2 eixos)",
       "Super bitrem (3+3 eixos)"

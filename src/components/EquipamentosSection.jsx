@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import equipamentos from '../mocks/equipamentosMock';
 import Container from './Container';
+import OptimizedImage from '../components/OptimizedImage';
 
 // Função para converter nome em slug
 const createSlug = (nome) => {
@@ -30,7 +31,7 @@ const EquipamentosSection = () => {
         <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-center items-center">
           {equipamentos.filter(e => e.destaque).map((equipamento) => {
             const slug = createSlug(equipamento.nome); // Criar slug do nome
-            
+
             return (
               <div key={equipamento.nome} className="group bg-gray-100 overflow-hidden flex flex-col transition-all duration-500 ease-in-out w-full md:w-[calc(25%-18px)] flex-1 min-w-[260px] max-w-[350px] mx-auto relative">
                 <Link to={`/equipamentos/${slug}`}> {/* Usar slug ao invés de índice */}

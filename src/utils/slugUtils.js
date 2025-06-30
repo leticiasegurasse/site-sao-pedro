@@ -6,16 +6,16 @@
  * @returns {string} - Slug formatado
  */
 export const createSlug = (texto) => {
-  if (!texto) return '';
-  
-  return texto
-    .toLowerCase()
-    .normalize('NFD') // Remove acentos
-    .replace(/[\u0300-\u036f]/g, '') // Remove diacríticos
-    .replace(/[^\w\s-]/g, '') // Remove caracteres especiais exceto hífens e espaços
-    .replace(/\s+/g, '-') // Substitui espaços por hífens
-    .replace(/-+/g, '-') // Remove hífens múltiplos
-    .replace(/^-|-$/g, ''); // Remove hífens do início e fim
+    if (!texto) return '';
+
+    return texto
+        .toLowerCase()
+        .normalize('NFD') // Remove acentos
+        .replace(/[\u0300-\u036f]/g, '') // Remove diacríticos
+        .replace(/[^\w\s-]/g, '') // Remove caracteres especiais exceto hífens e espaços
+        .replace(/\s+/g, '-') // Substitui espaços por hífens
+        .replace(/-+/g, '-') // Remove hífens múltiplos
+        .replace(/^-|-$/g, ''); // Remove hífens do início e fim
 };
 
 /**
@@ -24,11 +24,11 @@ export const createSlug = (texto) => {
  * @returns {string} - Texto formatado
  */
 export const slugToText = (slug) => {
-  if (!slug) return '';
-  
-  return slug
-    .replace(/-/g, ' ') // Substitui hífens por espaços
-    .replace(/\b\w/g, l => l.toUpperCase()); // Capitaliza primeira letra de cada palavra
+    if (!slug) return '';
+
+    return slug
+        .replace(/-/g, ' ') // Substitui hífens por espaços
+        .replace(/\b\w/g, l => l.toUpperCase()); // Capitaliza primeira letra de cada palavra
 };
 
 /**
@@ -38,11 +38,11 @@ export const slugToText = (slug) => {
  * @returns {Object|null} - Equipamento encontrado ou null
  */
 export const findEquipmentBySlug = (equipamentos, slug) => {
-  if (!equipamentos || !slug) return null;
-  
-  return equipamentos.find(equipamento => 
-    createSlug(equipamento.nome) === slug
-  );
+    if (!equipamentos || !slug) return null;
+
+    return equipamentos.find(equipamento =>
+        createSlug(equipamento.nome) === slug
+    );
 };
 
 /**
@@ -51,8 +51,8 @@ export const findEquipmentBySlug = (equipamentos, slug) => {
  * @returns {string} - URL formatada
  */
 export const getEquipmentUrl = (nomeEquipamento) => {
-  const slug = createSlug(nomeEquipamento);
-  return `/equipamentos/${slug}`;
+    const slug = createSlug(nomeEquipamento);
+    return `/equipamentos/${slug}`;
 };
 
 /**
@@ -71,8 +71,8 @@ export const getEquipmentUrl = (nomeEquipamento) => {
 
 // Exportação default para facilitar import
 export default {
-  createSlug,
-  slugToText,
-  findEquipmentBySlug,
-  getEquipmentUrl
+    createSlug,
+    slugToText,
+    findEquipmentBySlug,
+    getEquipmentUrl
 };
