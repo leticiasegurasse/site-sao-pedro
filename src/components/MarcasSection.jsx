@@ -15,7 +15,7 @@ const MarcasSection = () => {
           <div className="w-full md:w-3/4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6 justify-items-center">
             {[1, 2, 3, 4, 5, 6, 7].map((item) => (
               <div key={item} className="w-full aspect-square bg-gray-100 rounded-lg p-3 sm:p-4 flex items-center justify-center shadow-sm hover:shadow-md transition-shadow duration-300">
-                <img 
+                <OptimizedImage 
                   src={`/images/logo${item}.png`} 
                   alt={`Logo ${item}`} 
                   className="w-full h-full object-contain" 

@@ -59,7 +59,7 @@ const Equipamentos = () => {
                 >
                   <Link to={`/equipamentos/${slug}`} className="flex flex-col h-full"> {/* Usar slug */}
                     <div className="relative flex flex-col items-center">
-                      <img
+                      <OptimizedImage
                         src={equip.imagens[0].replace('/public', '')}
                         alt={equip.nome}
                         className="w-full h-60 sm:h-72 lg:h-80 object-cover transition-all duration-500 group-hover:h-56 sm:group-hover:h-64 lg:group-hover:h-67"

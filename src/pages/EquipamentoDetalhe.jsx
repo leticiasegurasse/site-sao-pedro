@@ -5,6 +5,7 @@ import equipamentos from '../mocks/equipamentosMock';
 import { findEquipmentBySlug, slugToText } from '../utils/slugUtils';
 import ContatoSection from '../components/ContatoSection';
 import Container from '../components/Container';
+import OptimizedImage from '../components/OptimizedImage';
 
 const EquipamentoDetalhe = () => {
   const { nome } = useParams();
@@ -46,7 +47,7 @@ const EquipamentoDetalhe = () => {
 
       {/* Imagem principal do equipamento */}
       <div className="w-full mx-auto flex justify-center">
-        <img
+        <OptimizedImage
           src={equipamento.imagens[0].replace('/public', '')}
           alt={equipamento.nome}
           className="w-full h-auto object-contain shadow-md"
@@ -75,12 +76,12 @@ const EquipamentoDetalhe = () => {
 
       {/* Imagens */}
       <div className="w-full flex flex-col md:flex-row justify-center items-center">
-        <img
+        <OptimizedImage
           src={equipamento.imagens[1].replace('/public', '')}
           alt={equipamento.nome}
           className="w-full md:w-[70%] h-60 sm:h-72 md:h-80 object-cover"
         />
-        <img
+        <OptimizedImage
           src={equipamento.imagens[2].replace('/public', '')}
           alt={equipamento.nome}
           className="w-full md:w-[30%] h-60 sm:h-72 md:h-80 object-cover"

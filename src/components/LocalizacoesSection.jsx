@@ -29,7 +29,7 @@ const LocalizacoesSection = () => {
             </Link>
           </div>
           <div className="w-full md:w-7/12 flex justify-center relative z-10">
-            <img 
+            <OptimizedImage 
               src="/images/map.svg" 
               alt="Mapa do Brasil" 
               className="w-full h-auto drop-shadow-xl mt-0 md:mt-10 max-w-md md:max-w-none" 

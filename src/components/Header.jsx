@@ -62,7 +62,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="relative z-50">
-              <img 
+              <OptimizedImage 
                 src="/images/logo.png" 
                 alt="Logo" 
                 className="h-7 sm:h-8 md:h-10 transition-all duration-200 hover:scale-105" 

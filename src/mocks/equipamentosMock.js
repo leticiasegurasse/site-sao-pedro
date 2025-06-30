@@ -96,9 +96,9 @@ const equipamentos = [
   {
     nome: "Semirreboque Carga Seca",
     imagens: [
-      "/images/semirreboques.png",
-      "/images/semirreboques2.png",
-      "/images/semirreboques3.png"
+      "/images/semirreboques.jpg",
+      "/images/semirreboques2.jpg",
+      "/images/semirreboques3.jpg"
     ],
     informacoesTecnicas: [
       "14600 / 15400 x 2600 x 3011",

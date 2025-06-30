@@ -10,7 +10,7 @@ const SobreEmpresa = () => {
 
       {/* Hero Section com Container */}
       <div className="relative w-full">
-        <img 
+        <OptimizedImage 
           src="/images/imagem_sobre.png" 
           alt="Empresa" 
           className="w-full h-[400px] sm:h-[500px] object-cover brightness-75" 
@@ -33,7 +33,7 @@ const SobreEmpresa = () => {
         <Container fullWidth noPadding>
           <div className="flex flex-col lg:flex-row items-center justify-center min-h-[70vh]">
             <div className="w-full lg:w-1/2">
-              <img 
+              <OptimizedImage 
                 src="/images/soldador.png" 
                 alt="Soldador trabalhando" 
                 className="w-full h-full object-cover max-h-[550px]"
@@ -114,7 +114,7 @@ const SobreEmpresa = () => {
             
             {/* Lado direito imagem */}
             <div className="w-full lg:w-1/2">
-              <img 
+              <OptimizedImage 
                 src="/images/empresa.png" 
                 alt="Fábrica da empresa" 
                 className="w-full h-full object-cover max-h-[700px]"

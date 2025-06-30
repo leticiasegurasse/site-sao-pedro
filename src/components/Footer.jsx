@@ -17,7 +17,7 @@ const Footer = () => {
             {/* Coluna 1: Informações da Empresa */}
             <div className="text-center sm:text-left lg:col-span-1">
               <div className="mb-4 sm:mb-6">
-                <img 
+                <OptimizedImage 
                   src="/images/logo.png" 
                   alt="São Pedro Implementos Rodoviários" 
                   className="h-8 sm:h-10 mx-auto sm:mx-0"
