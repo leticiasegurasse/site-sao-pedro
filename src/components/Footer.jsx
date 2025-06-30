@@ -155,14 +155,14 @@ const Footer = () => {
             {/* Redes Sociais - Desktop */}
             <div className="order-1 sm:order-2 hidden sm:flex space-x-3">
               <a
-                href="#"
+                href="https://www.instagram.com/saopedroimplementosrodoviarios/"
                 className="text-gray-400 hover:text-white transition-all duration-200 p-2 rounded-full hover:bg-red-600 transform hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/saopedroimplementos/#"
                 className="text-gray-400 hover:text-white transition-all duration-200 p-2 rounded-full hover:bg-red-600 transform hover:scale-110"
                 aria-label="Facebook"
               >

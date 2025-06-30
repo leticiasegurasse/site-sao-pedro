@@ -38,7 +38,7 @@ const SobreEmpresa = () => {
         {/* Seção 64 anos com Container */}
         <section className="min-h-[70vh] bg-white">
           <Container fullWidth noPadding>
-            <div className="flex flex-col lg:flex-row items-center justify-center min-h-[70vh]">
+            <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-[70vh]">
               <div className="w-full lg:w-1/2">
                 <OptimizedImage
                   src="/images/soldador.png"
@@ -60,6 +60,7 @@ const SobreEmpresa = () => {
             </div>
           </Container>
         </section>
+
 
         {/* Seção Missão, Visão, Valores com Container */}
         <section className="min-h-[70vh]">
