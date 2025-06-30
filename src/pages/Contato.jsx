@@ -1,6 +1,7 @@
 import React from 'react';
 import MainLayout from '../layouts/MainLayout';
 import ContatoCard from '../components/ContatoCard';
+import Container from '../components/Container';
 
 const contatos = [
   {
@@ -20,21 +21,25 @@ const contatos = [
 const Contato = () => {
   return (
     <MainLayout>
-      <section className="max-w-[1200px] mx-auto flex flex-col items-center justify-center py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">Entre em contato</h1>
-        <div className="w-full flex flex-col md:flex-row md:flex-wrap justify-between items-center gap-3">
-          {contatos.map((contato, idx) => (
-            <div key={idx}>
-              <ContatoCard
-                title={contato.title}
-                description={contato.description}
-              />
-            </div>
-          ))}
+      <Container className="py-12 sm:py-16">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center">
+            Entre em contato
+          </h1>
+          <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-4 lg:gap-6">
+            {contatos.map((contato, idx) => (
+              <div key={idx} className="w-full max-w-sm lg:max-w-none lg:flex-1">
+                <ContatoCard
+                  title={contato.title}
+                  description={contato.description}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </section>
+      </Container>
     </MainLayout>
   );
 };
 
-export default Contato; 
+export default Contato;
