@@ -1,7 +1,5 @@
-// src/mocks/representantesMock.js
-
 const contatos = {
-  // Estados com múltiplos representantes
+
   'SP': [
     {
       nome: 'Jacinto Ferreira',
