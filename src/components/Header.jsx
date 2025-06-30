@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, MapPin, Clock } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Clock, Home, Building2, Truck } from 'lucide-react';
 import Container from './Container';
 import TopBar from './TopBar';
 
@@ -43,6 +43,14 @@ const Header = () => {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [isMenuOpen]);
 
+  const menuItems = [
+    { path: '/', label: 'Home', icon: Home },
+    { path: '/empresa', label: 'A Empresa', icon: Building2 },
+    { path: '/equipamentos', label: 'Equipamentos', icon: Truck },
+    { path: '/representantes', label: 'Representantes', icon: MapPin },
+    { path: '/contato', label: 'Contato', icon: Phone }
+  ];
+
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50 border-b-4 border-red-600">
       {/* TopBar */}
@@ -63,13 +71,7 @@ const Header = () => {
             
             {/* Menu Desktop */}
             <div className="hidden md:flex space-x-6 lg:space-x-8">
-              {[
-                { path: '/', label: 'Home' },
-                { path: '/empresa', label: 'A Empresa' },
-                { path: '/equipamentos', label: 'Equipamentos' },
-                { path: '/representantes', label: 'Representantes' },
-                { path: '/contato', label: 'Contato' }
-              ].map((item) => (
+              {menuItems.map((item) => (
                 <Link 
                   key={item.path}
                   to={item.path} 
@@ -141,42 +143,41 @@ const Header = () => {
         >
           {/* Header do Menu Mobile */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-red-600">
-            
             <span className="text-white font-semibold text-lg">Menu</span>
           </div>
 
           {/* Links do Menu Mobile */}
           <nav className="pt-6 pb-8">
-            {[
-              { path: '/', label: 'Home', icon: '🏠' },
-              { path: '/empresa', label: 'A Empresa', icon: '🏢' },
-              { path: '/equipamentos', label: 'Equipamentos', icon: '🚛' },
-              { path: '/representantes', label: 'Representantes', icon: '📍' },
-              { path: '/contato', label: 'Contato', icon: '📞' }
-            ].map((item, index) => (
-              <Link 
-                key={item.path}
-                to={item.path} 
-                className={`
-                  flex items-center px-6 py-4 text-base font-medium transition-all duration-200
-                  border-l-4 border-transparent
-                  ${isActive(item.path) 
-                    ? 'text-red-600 bg-red-50 border-red-600' 
-                    : 'text-gray-700 hover:text-red-600 hover:bg-gray-50 hover:border-red-300'
-                  }
-                `}
-                style={{
-                  animationDelay: isMenuOpen ? `${index * 50}ms` : '0ms'
-                }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span className="mr-3 text-lg">{item.icon}</span>
-                {item.label}
-                {isActive(item.path) && (
-                  <div className="ml-auto w-2 h-2 bg-red-600 rounded-full animate-pulse" />
-                )}
-              </Link>
-            ))}
+            {menuItems.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <Link 
+                  key={item.path}
+                  to={item.path} 
+                  className={`
+                    flex items-center px-6 py-4 text-base font-medium transition-all duration-200
+                    border-l-4 border-transparent
+                    ${isActive(item.path) 
+                      ? 'text-red-600 bg-red-50 border-red-600' 
+                      : 'text-gray-700 hover:text-red-600 hover:bg-gray-50 hover:border-red-300'
+                    }
+                  `}
+                  style={{
+                    animationDelay: isMenuOpen ? `${index * 50}ms` : '0ms'
+                  }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <IconComponent 
+                    className="mr-3 w-5 h-5" 
+                    strokeWidth={1.5}
+                  />
+                  {item.label}
+                  {isActive(item.path) && (
+                    <div className="ml-auto w-2 h-2 bg-red-600 rounded-full animate-pulse" />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Informações de Contato no Menu Mobile */}
