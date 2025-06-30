@@ -1,15 +1,15 @@
+// Exemplo: EquipamentoDetalhe simplificado com slugUtils
 import MainLayout from '../layouts/MainLayout';
 import { useParams, useNavigate } from 'react-router-dom';
 import equipamentos from '../mocks/equipamentosMock';
-import { useState } from 'react';
+import { findEquipmentBySlug, slugToText } from '../utils/slugUtils';
 import ContatoSection from '../components/ContatoSection';
 import Container from '../components/Container';
 
 const EquipamentoDetalhe = () => {
-  const { id } = useParams();
+  const { nome } = useParams();
   const navigate = useNavigate();
-  const equipamento = equipamentos[Number(id)];
-  const [imgIdx, setImgIdx] = useState(0);
+  const equipamento = findEquipmentBySlug(equipamentos, nome);
 
   if (!equipamento) {
     return (
@@ -17,12 +17,19 @@ const EquipamentoDetalhe = () => {
         <Container className="py-16">
           <div className="flex flex-col items-center justify-center min-h-[40vh]">
             <h2 className="text-2xl font-bold mb-4">Equipamento não encontrado</h2>
-            <button onClick={() => navigate(-1)} className="text-red-600 underline">Voltar</button>
+            <p className="text-gray-600 mb-4">
+              O equipamento "{slugToText(nome)}" não foi encontrado em nosso catálogo.
+            </p>
+            <button onClick={() => navigate(-1)} className="text-red-600 underline">
+              Voltar
+            </button>
           </div>
         </Container>
       </MainLayout>
     );
-  }
+  
+}
+
 
   return (
     <MainLayout>
