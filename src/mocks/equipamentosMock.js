@@ -1,10 +1,10 @@
 const equipamentos = [
   {
-    nome: "Carreta Graneleira",
+    nome: "Semirreboque Carga Seca",
     imagens: [
-      "/public/images/graneleira.png",
-      "/public/images/Rectangle 4.png",
-      "/public/images/Rectangle 5.png"
+      "/public/images/semirreboques.png",
+      "/public/images/semirreboques2.png",
+      "/public/images/semirreboques3.png"
     ],
     informacoesTecnicas: [
       "14600 / 15400 x 2600 x 3011",
@@ -16,287 +16,37 @@ const equipamentos = [
       "Ripamento interno galvanizado",
       "Rodapé de chapa para guia dos palets",
       "Assoalho aço xadrez 4,75 mm",
-      "Reforço sob assoalho anti-afundamento"
+      "Reforço sob assoalho anti-afundamento",
+      "Pino rei de duas posições",
+      "Caixa de cozinha grande",
+      "Caixa de ferramentas",
+      "Corote d'água com saboneteira",
+      "Protetor de ciclista em alumínio",
+      "Suporte de estepe tipo cesto para dois pneus",
+      "Suspensor no 1º eixo",
+      "Para lamas plásticos com lameiro",
+      "Freios ABS",
+      "Parte elétrica em LED"
     ],
     informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
+      { chave: "Cavalo", valor: "4x2 ou 6x2" },
+      { chave: "Caixa de carga", valor: "100% alumínio" },
+      { chave: "Iluminação", valor: "LED" },
+      { chave: "Freios", valor: "ABS" },
     ],
     versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-    
+      "2 eixos juntos",
+      "2 eixos distanciados",
+      "3 eixos juntos",
+      "3 eixos distanciados",
+      "2 eixos distanciados (pequena)",
+      "Bitrem (2+2 eixos)",
+      "Super bitrem (3+3 eixos)"
+    ],
+    destaque: true
   },
-  {
-    nome: "Carreta Carvoeira",
-    imagens: [
-      "/public/images/carvoeira.png",
-      "/public/images/Rectangle 6.png",
-      "/public/images/empresa.png"
-    ],
-    informacoesTecnicas: [ // Exibe no máximo 20 informações
-      "Comprimento: 13000 mm",
-      "Eixos: 2",
-      "Material: Aço reforçado",
-      "Capacidade: 25 toneladas",
-      "Sistema de freio pneumático",
-      "Pintura eletrostática",
-      "Chassi reforçado",
-      "Suspensão mecânica",
-      "Pneus 295/80 R22.5",
-      "Iluminação LED",
-      "Eixos: 2",
-      "Material: Aço reforçado",
-      "Capacidade: 25 toneladas",
-      "Sistema de freio pneumático",
-      "Pintura eletrostática",
-      "Chassi reforçado",
-      "Suspensão mecânica",
-      "Pneus 295/80 R22.5",
-      "Iluminação LED"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  },
-  {
-    nome: "Semirreboque VPC",
-    imagens: [
-      "/public/images/vpc.png",
-      "/public/images/soldador.png",
-      "/public/images/Rectangle 4.png"
-    ],
-    informacoesTecnicas: [
-      "Capacidade: 28 toneladas",
-      "Eixos: 3",
-      "Sistema de freio ABS",
-      "Estrutura em aço carbono",
-      "Pintura anticorrosiva",
-      "Plataforma antiderrapante",
-      "Lanternas traseiras LED",
-      "Caixa de ferramentas lateral",
-      "Suspensão pneumática",
-      "Rodas de alumínio"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  },
-  {
-    nome: "Semirreboque VPC",
-    imagens: [
-      "/public/images/vpc.png",
-      "/public/images/soldador.png",
-      "/public/images/Rectangle 4.png"
-    ],
-    informacoesTecnicas: [
-      "Capacidade: 28 toneladas",
-      "Eixos: 3",
-      "Sistema de freio ABS",
-      "Estrutura em aço carbono",
-      "Pintura anticorrosiva",
-      "Plataforma antiderrapante",
-      "Lanternas traseiras LED",
-      "Caixa de ferramentas lateral",
-      "Suspensão pneumática",
-      "Rodas de alumínio"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  },
-  {
-    nome: "Semirreboque VPC",
-    imagens: [
-      "/public/images/vpc.png",
-      "/public/images/soldador.png",
-      "/public/images/Rectangle 4.png"
-    ],
-    informacoesTecnicas: [
-      "Capacidade: 28 toneladas",
-      "Eixos: 3",
-      "Sistema de freio ABS",
-      "Estrutura em aço carbono",
-      "Pintura anticorrosiva",
-      "Plataforma antiderrapante",
-      "Lanternas traseiras LED",
-      "Caixa de ferramentas lateral",
-      "Suspensão pneumática",
-      "Rodas de alumínio"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  },
-  {
-    nome: "Semirreboque VPC",
-    imagens: [
-      "/public/images/vpc.png",
-      "/public/images/soldador.png",
-      "/public/images/Rectangle 4.png"
-    ],
-    informacoesTecnicas: [
-      "Capacidade: 28 toneladas",
-      "Eixos: 3",
-      "Sistema de freio ABS",
-      "Estrutura em aço carbono",
-      "Pintura anticorrosiva",
-      "Plataforma antiderrapante",
-      "Lanternas traseiras LED",
-      "Caixa de ferramentas lateral",
-      "Suspensão pneumática",
-      "Rodas de alumínio"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  },
-  {
-    nome: "Semirreboque VPC",
-    imagens: [
-      "/public/images/vpc.png",
-      "/public/images/soldador.png",
-      "/public/images/Rectangle 4.png"
-    ],
-    informacoesTecnicas: [
-      "Capacidade: 28 toneladas",
-      "Eixos: 3",
-      "Sistema de freio ABS",
-      "Estrutura em aço carbono",
-      "Pintura anticorrosiva",
-      "Plataforma antiderrapante",
-      "Lanternas traseiras LED",
-      "Caixa de ferramentas lateral",
-      "Suspensão pneumática",
-      "Rodas de alumínio"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  },
-  {
-    nome: "Semirreboque VPC",
-    imagens: [
-      "/public/images/vpc.png",
-      "/public/images/soldador.png",
-      "/public/images/Rectangle 4.png"
-    ],
-    informacoesTecnicas: [
-      "Capacidade: 28 toneladas",
-      "Eixos: 3",
-      "Sistema de freio ABS",
-      "Estrutura em aço carbono",
-      "Pintura anticorrosiva",
-      "Plataforma antiderrapante",
-      "Lanternas traseiras LED",
-      "Caixa de ferramentas lateral",
-      "Suspensão pneumática",
-      "Rodas de alumínio"
-    ],
-    informacoes: [
-      { chave: "Comprimento", valor: "13000 mm" },
-      { chave: "Eixos", valor: "2" }
-    ],
-    versoes: [
-      "28 toneladas",
-      "Eixos: 3",
-      "Sistema",
-      "Estrutura",
-      "Pintura",
-      "Plataforma",
-      "Lanternas",
-      "Caixa de",
-      "Suspensão",
-      "Rodas"
-    ]
-  }
+  
+
 ];
 
 export default equipamentos; 

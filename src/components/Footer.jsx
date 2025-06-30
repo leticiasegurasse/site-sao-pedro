@@ -53,7 +53,9 @@ const Footer = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <i className="fas fa-map-marker-alt"></i>
-                Ver o mais próximo
+                <Link to="/representantes" className="hover:text-white transition">
+                  Ver o mais próximo
+                </Link>
               </li>
             </ul>
           </div>

@@ -6,10 +6,12 @@ import Representantes from '../pages/Representantes';
 import Contato from '../pages/Contato';
 import Equipamentos from '../pages/Equipamentos';
 import EquipamentoDetalhe from '../pages/EquipamentoDetalhe';
+import ScrollToTop from '../components/ScrollToTop';
 
 const AppRoutes = () => {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route path={ROUTES.home} element={<Home />} />
                 <Route path={ROUTES.empresa} element={<SobreEmpresa />} />

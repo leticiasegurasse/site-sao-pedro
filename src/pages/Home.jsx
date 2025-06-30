@@ -1,4 +1,5 @@
 import React from 'react';
+import VideoSection from '../components/VideoSection';
 import EquipamentosSection from '../components/EquipamentosSection';
 import DiferencialSection from '../components/DiferencialSection';
 import LocalizacoesSection from '../components/LocalizacoesSection';
@@ -10,6 +11,7 @@ import MainLayout from '../layouts/MainLayout';
 const Home = () => {
   return (
     <MainLayout>
+      <VideoSection />
       <EquipamentosSection />
       <DiferencialSection />
       <LocalizacoesSection />
