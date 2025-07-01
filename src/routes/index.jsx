@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ROUTES } from '../config/routes';
 import Home from '../pages/Home';
 import SobreEmpresa from '../pages/SobreEmpresa';
@@ -7,12 +7,15 @@ import Contato from '../pages/Contato';
 import Equipamentos from '../pages/Equipamentos';
 import EquipamentoDetalhe from '../pages/EquipamentoDetalhe';
 import ScrollToTop from '../components/ScrollToTop';
+import { AnimatePresence } from 'framer-motion';
 
-const AppRoutes = () => {
+
+const RouterWrapper = () => {
+    const location = useLocation();
+
     return (
-        <BrowserRouter>
-            <ScrollToTop />
-            <Routes>
+        <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
                 <Route path={ROUTES.home} element={<Home />} />
                 <Route path={ROUTES.empresa} element={<SobreEmpresa />} />
                 <Route path={ROUTES.representantes} element={<Representantes />} />
@@ -20,8 +23,17 @@ const AppRoutes = () => {
                 <Route path={ROUTES.equipamentos} element={<Equipamentos />} />
                 <Route path={ROUTES.equipamentoDetalhe} element={<EquipamentoDetalhe />} />
             </Routes>
+        </AnimatePresence>
+    );
+};
+
+const AppRoutes = () => {
+    return (
+        <BrowserRouter>
+            <ScrollToTop />
+            <RouterWrapper />
         </BrowserRouter>
-    )
-}
+    );
+};
 
 export default AppRoutes;

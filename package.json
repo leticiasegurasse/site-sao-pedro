@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "convert-images": "node scripts/convertToWebP.cjs",
+    "optimize-images": "npm run convert-images && npm run build",
+    "images:convert": "node scripts/convertToWebP.cjs",
+    "images:clean": "find public/images -name '*.webp' -delete || echo 'WebP files cleaned'"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
@@ -15,6 +19,7 @@
     "@tailwindcss/vite": "^4.1.7",
     "axios": "^1.9.0",
     "file-saver": "^2.0.5",
+    "framer-motion": "^12.20.1",
     "lucide-react": "^0.511.0",
     "luxon": "^3.6.1",
     "react": "^19.1.0",
@@ -28,6 +33,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@squoosh/lib": "^0.3.1",
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
@@ -36,7 +42,9 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "sharp": "^0.32.6",
     "vite": "^6.3.5",
-    "vite-plugin-svgr": "^4.3.0"
+    "vite-plugin-svgr": "^4.3.0",
+    "vite-plugin-webp": "^1.1.3"
   }
 }

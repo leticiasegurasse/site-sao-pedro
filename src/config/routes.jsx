@@ -4,5 +4,5 @@ export const ROUTES = {
     representantes: '/representantes',
     contato: '/contato',
     equipamentos: '/equipamentos',
-    equipamentoDetalhe: '/equipamentos/:id',
+    equipamentoDetalhe: '/equipamentos/:nome',
 };
