@@ -20,8 +20,10 @@ const Home = () => {
         transition={{ duration: 0.4 }}
       >
         <VideoSection />
-        <EquipamentosSection />
-        <DiferencialSection />
+        <div className="flex flex-col-reverse sm:flex-col">
+          <EquipamentosSection />
+          <DiferencialSection />
+        </div>
         <LocalizacoesSection />
         <ReferenciaSection />
         <MarcasSection />

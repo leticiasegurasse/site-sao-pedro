@@ -22,10 +22,10 @@ const EquipamentosSection = () => {
     <section className="py-12 sm:py-16">
       <Container>
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-7 group relative inline-block w-full flex justify-center">
-          <Link to="/equipamentos" className="relative inline-block pb-2">
+          <Link to="/equipamentos" className="relative inline-block pb-2 group">
             Equipamentos
-            <div className="absolute left-0 bottom-0 w-0 h-1 bg-red-600 group-hover:w-full transition-all duration-300"></div>
-            <ArrowRight className="w-5 h-5 inline-block ml-2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-red-600" />
+            <div className="absolute left-0 bottom-0 h-1 bg-red-600 transition-all duration-300 w-full sm:w-0 sm:group-hover:w-full"></div>
+            <ArrowRight className="w-5 h-5 inline-block ml-2 text-red-600 transition-all duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100" />
           </Link>
         </h2>
         <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-center items-center px-0 sm:px-4">
