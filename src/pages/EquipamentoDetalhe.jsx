@@ -1,4 +1,5 @@
 // Exemplo: EquipamentoDetalhe simplificado com slugUtils
+import React, { useState, useRef, useEffect } from 'react';
 import MainLayout from '../layouts/MainLayout';
 import { useParams, useNavigate } from 'react-router-dom';
 import equipamentos from '../mocks/equipamentosMock';
@@ -7,11 +8,49 @@ import ContatoSection from '../components/ContatoSection';
 import Container from '../components/Container';
 import OptimizedImage from '../components/OptimizedImage';
 import { motion } from 'framer-motion';
+import 'keen-slider/keen-slider.min.css';
+import { useKeenSlider } from 'keen-slider/react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const EquipamentoDetalhe = () => {
   const { nome } = useParams();
   const navigate = useNavigate();
   const equipamento = findEquipmentBySlug(equipamentos, nome);
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const timer = useRef(null);
+  const sliderContainerRef = useRef(null);
+
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: false,
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    slides: {
+      perView: 1,
+      spacing: 10,
+    },
+  });
+
+  // Funções de controle do autoplay
+  const startAutoplay = () => {
+    timer.current = setInterval(() => {
+      instanceRef.current?.next();
+    }, 3000);
+  };
+
+  const stopAutoplay = () => {
+    clearInterval(timer.current);
+  };
+
+  // Inicia autoplay ao montar
+  useEffect(() => {
+    if (!instanceRef.current) return;
+
+    startAutoplay();
+
+    return () => stopAutoplay();
+  }, [instanceRef]);
 
   if (!equipamento) {
     return (
@@ -72,7 +111,7 @@ const EquipamentoDetalhe = () => {
         */}
 
         <section className="w-full z-100">
-          {equipamento?.video? (
+          {equipamento?.video ? (
             <video
               autoPlay
               loop
@@ -85,12 +124,12 @@ const EquipamentoDetalhe = () => {
             </video>
           ) : (
             <div className="w-full mx-auto flex justify-center">
-          <OptimizedImage
-            src={equipamento.imagens[0].replace('/public', '')}
-            alt={equipamento.nome}
-            className="w-full h-auto object-contain shadow-md"
-          />
-        </div> 
+              <OptimizedImage
+                src={equipamento.imagens[0].replace('/public', '')}
+                alt={equipamento.nome}
+                className="w-full h-auto object-contain shadow-md"
+              />
+            </div>
           )}
         </section>
 
@@ -116,7 +155,7 @@ const EquipamentoDetalhe = () => {
           </div>
         </div>
 
-        {/* Imagens */}
+        {/* Imagens 
         <div className="w-full flex flex-col md:flex-row justify-center items-center">
           <OptimizedImage
             src={equipamento.imagens[1].replace('/public', '')}
@@ -129,6 +168,61 @@ const EquipamentoDetalhe = () => {
             className="w-full md:w-[30%] h-60 sm:h-72 md:h-80 object-cover"
           />
         </div>
+*/}
+
+
+        {/* Slider com setas, autoplay, bolinhas e transição suave */}
+        <div
+          className="relative w-full bg-gray-100"
+          onMouseEnter={stopAutoplay}
+          onMouseLeave={startAutoplay}
+        >
+          {/* Slider */}
+          <div
+            ref={sliderRef}
+            className="keen-slider transition-transform duration-500 ease-out"
+          >
+            {equipamento.imagens.map((img, idx) => (
+              <div
+                key={idx}
+                className="keen-slider__slide transition-transform duration-500 ease-out"
+              >
+                <OptimizedImage
+                  src={img.replace('/public', '')}
+                  alt={`${equipamento.nome} - imagem ${idx + 1}`}
+                  className="w-full h-[300px] sm:h-[450px] object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Setas */}
+          <button
+            onClick={() => instanceRef.current?.prev()}
+            className="hidden sm:flex cursor-pointer absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white shadow-md p-2 rounded-full z-10"
+          >
+            <ChevronLeft className="w-5 h-5 text-black" />
+          </button>
+          <button
+            onClick={() => instanceRef.current?.next()}
+            className="hidden sm:flex cursor-pointer absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white shadow-md p-2 rounded-full z-10"
+          >
+            <ChevronRight className="w-5 h-5 text-black" />
+          </button>
+
+          {/* Bolinhas */}
+          <div className="flex justify-center gap-2 mt-4 py-2 bg-gray-100">
+            {equipamento.imagens.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => instanceRef.current?.moveToIdx(idx)}
+                className={`w-3 h-3 rounded-full cursor-pointer transition-all ${currentSlide === idx ? 'bg-red-600' : 'bg-gray-300'
+                  }`}
+              />
+            ))}
+          </div>
+        </div>
+
 
         {/* Outras versões */}
         <div className='bg-gray-100 w-full'>

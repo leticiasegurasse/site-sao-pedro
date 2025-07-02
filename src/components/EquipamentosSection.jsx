@@ -36,11 +36,15 @@ const EquipamentosSection = () => {
               <div key={equipamento.nome} className="group bg-gray-100 overflow-hidden flex flex-col transition-all duration-500 ease-in-out 
       w-full md:w-[calc(25%-18px)] min-w-[260px] max-w-none sm:max-w-[350px] mx-0">
                 <Link to={`/equipamentos/${slug}`}> {/* Usar slug ao invés de índice */}
-                  <div className="relative">
-                    
-                    <OptimizedImage src={equipamento.imagens[0]} alt={equipamento.nome} className="w-full h-55 object-cover transition-all duration-500 group-hover:h-40" />
+                  <div className="relative h-[220px] overflow-hidden">
+                    <OptimizedImage
+                      src={equipamento.imagens[0]}
+                      alt={equipamento.nome}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-115"
+                    />
                     <div className="absolute left-0 bottom-0 w-0 h-1 bg-red-600 group-hover:w-full transition-all duration-300"></div>
                   </div>
+
                   <div className="pt-4 px-4 flex-1 flex flex-col relative z-10 min-h-[90px]">
                     <span className="text-xl sm:text-2xl font-extrabold mb-2">{equipamento.nome}</span>
                   </div>
