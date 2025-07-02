@@ -57,18 +57,46 @@ const EquipamentoDetalhe = () => {
             <span className="mx-1">/</span>
             <span className="font-bold italic">{equipamento.nome}</span>
           </Container>
+
+
         </div>
 
-        {/* Imagem principal do equipamento */}
-        <div className="w-full mx-auto flex justify-center">
+        {/* Imagem principal do equipamento 
+         <div className="w-full mx-auto flex justify-center">
           <OptimizedImage
             src={equipamento.imagens[0].replace('/public', '')}
             alt={equipamento.nome}
             className="w-full h-auto object-contain shadow-md"
           />
-        </div>
+        </div> 
+        */}
 
-        {/* Seção de nome e informações */}
+        <section className="w-full z-100">
+          {equipamento?.video? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+            >
+              <source src={equipamento.video} type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          ) : (
+            <div className="w-full mx-auto flex justify-center">
+          <OptimizedImage
+            src={equipamento.imagens[0].replace('/public', '')}
+            alt={equipamento.nome}
+            className="w-full h-auto object-contain shadow-md"
+          />
+        </div> 
+          )}
+        </section>
+
+
+
+
         <div className="w-full flex flex-col md:flex-row">
           {/* Nome do equipamento */}
           <div className="md:w-1/2 w-full bg-[#e30613] flex items-center justify-center p-6 sm:p-8">

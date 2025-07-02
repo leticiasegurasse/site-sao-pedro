@@ -23,7 +23,7 @@ const EquipamentosSection = () => {
       <Container>
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-7 group relative inline-block w-full flex justify-center">
           <Link to="/equipamentos" className="relative inline-block pb-2 group">
-            Equipamentos
+            Implementos
             <div className="absolute left-0 bottom-0 h-1 bg-red-600 transition-all duration-300 w-full sm:w-0 sm:group-hover:w-full"></div>
             <ArrowRight className="w-5 h-5 inline-block ml-2 text-red-600 transition-all duration-300 opacity-100 sm:opacity-0 sm:group-hover:opacity-100" />
           </Link>
@@ -37,10 +37,11 @@ const EquipamentosSection = () => {
       w-full md:w-[calc(25%-18px)] min-w-[260px] max-w-none sm:max-w-[350px] mx-0">
                 <Link to={`/equipamentos/${slug}`}> {/* Usar slug ao invés de índice */}
                   <div className="relative">
+                    
                     <OptimizedImage src={equipamento.imagens[0]} alt={equipamento.nome} className="w-full h-55 object-cover transition-all duration-500 group-hover:h-40" />
                     <div className="absolute left-0 bottom-0 w-0 h-1 bg-red-600 group-hover:w-full transition-all duration-300"></div>
                   </div>
-                  <div className="pt-4 px-4 flex-1 flex flex-col justify-end relative z-10">
+                  <div className="pt-4 px-4 flex-1 flex flex-col relative z-10 min-h-[90px]">
                     <span className="text-xl sm:text-2xl font-extrabold mb-2">{equipamento.nome}</span>
                   </div>
                   <div className="overflow-hidden max-h-[50px] transition-all duration-500 ease-in-out">

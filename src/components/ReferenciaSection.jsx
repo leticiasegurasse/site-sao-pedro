@@ -4,7 +4,7 @@ import OptimizedImage from '../components/OptimizedImage';
 
 const ReferenciaSection = () => {
   return (
-    <section className="w-full bg-white py-12 md:py-20">
+    <section className="w-full bg-white py-12 md:py-20 relative z-20">
       <Container>
         <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-8">
           <div className="w-full md:w-1/3 flex flex-col items-center md:items-start justify-between mb-8 md:mb-0">

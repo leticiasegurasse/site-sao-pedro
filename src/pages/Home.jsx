@@ -25,7 +25,9 @@ const Home = () => {
           <DiferencialSection />
         </div>
         <LocalizacoesSection />
+        <div className="z-100">
         <ReferenciaSection />
+        </div>
         <MarcasSection />
         <ContatoSection />
       </motion.div>

@@ -14,22 +14,23 @@ const ContatoSection = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full md:w-auto justify-center md:justify-end">
             <a
               href="tel:+553236964444"
-              className="bg-white text-red-600 font-bold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-md flex items-center justify-center gap-2 text-base sm:text-lg transition hover:bg-gray-100 w-full sm:w-auto shadow-lg"
+              className="bg-white text-red-600 font-bold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-md flex flex-row-reverse sm:flex-row items-center justify-center gap-2 text-base sm:text-lg transition hover:bg-gray-100 w-full sm:w-auto shadow-lg"
             >
               Fazer uma ligação
               <Phone className="w-5 h-5" />
             </a>
             <a
               href="mailto:vendas@saopedro.ind.br"
-              className="bg-white text-red-600 font-bold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-md flex items-center justify-center gap-2 text-base sm:text-lg transition hover:bg-gray-100 w-full sm:w-auto shadow-lg"
+              className="bg-white text-red-600 font-bold px-4 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-md flex flex-row-reverse sm:flex-row items-center justify-center gap-2 text-base sm:text-lg transition hover:bg-gray-100 w-full sm:w-auto shadow-lg"
             >
               Enviar email
               <Mail className="w-5 h-5" />
             </a>
             <Link
               to="/contato"
-              className="bg-white text-red-600 px-4 sm:px-6 py-3 sm:py-4 rounded-md flex items-center justify-center text-base sm:text-lg transition hover:bg-gray-100 w-full sm:w-auto shadow-lg"
+              className="bg-white text-red-600 font-bold px-4 sm:px-6 py-3 sm:py-4 rounded-md flex flex-row items-center justify-center text-base sm:text-lg transition hover:bg-gray-100 w-full sm:w-auto shadow-lg"
             >
+              Contatos
               <ChevronRight className="w-6 h-6" />
             </Link>
           </div>

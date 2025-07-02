@@ -1,6 +1,7 @@
 const equipamentos = [
   {
     nome: "Base Carvoeira",
+    
     imagens: [
       "/images/base-carvoeira1.jpg",
       "/images/base-carvoeira2.jpg",
@@ -95,6 +96,7 @@ const equipamentos = [
   },
   {
     nome: "Semirreboque Carga Seca",
+
     imagens: [
       "/images/semirreboques.jpg",
       "/images/semirreboques2.jpg",
@@ -142,6 +144,7 @@ const equipamentos = [
   },
   {
     nome: "Semirreboque Furgão",
+    video:"/videos/semirreboque_bau.mp4",
     imagens: [
       "/images/semirreboque-furgao1.jpg",
       "/images/semirreboque-furgao2.jpg",
