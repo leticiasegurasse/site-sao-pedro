@@ -14,10 +14,10 @@ const TopBar = () => {
                     <div className="flex items-center gap-2">
                         <Phone className="w-4 h-4 text-white flex-shrink-0" />
                         <a
-                            href="tel:03236964444"
+                            href="tel:3236964444"
                             className="font-semibold text-white hover:text-red-100 transition-colors"
                         >
-                            (032) 3696-4444
+                            (32) 3696-4444
                         </a>
                     </div>
 
@@ -33,7 +33,7 @@ const TopBar = () => {
                     <div className="flex items-center gap-2">
                         <Clock className="w-4 h-4 text-white flex-shrink-0" />
                         <span className="text-white">
-                            <span className="font-medium">SEG - SEX 8:00 - 17:00</span>
+                            <span className="font-medium">SEG - SEX 7:30 - 17:20</span>
                         </span>
                     </div>
 
@@ -49,7 +49,7 @@ const TopBar = () => {
                             href="tel:03236964444"
                             className="font-semibold text-white hover:text-red-100 transition-colors"
                         >
-                            (032) 3696-4444
+                            (32) 3696-4444
                         </a>
                     </div>
 

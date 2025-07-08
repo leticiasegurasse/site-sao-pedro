@@ -8,8 +8,8 @@ import { motion } from 'framer-motion';
 const contatos = [
   {
     title: 'Telefone',
-    description: '(032) 3696-4444',
-    link: 'tel:03236964444'
+    description: '(32) 3696-4444',
+    link: 'tel:3236964444'
   },
   {
     title: 'Email',

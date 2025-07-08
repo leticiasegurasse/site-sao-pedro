@@ -314,7 +314,7 @@ const contatos = {
   'RS': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Porto Alegre',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Porto Alegre - Rio Grande do Sul/RS',
     email: 'vendas@saopedro.ind.br'
   },
@@ -322,7 +322,7 @@ const contatos = {
   'SC': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Florianópolis',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Florianópolis - Santa Catarina/SC',
     email: 'vendas@saopedro.ind.br'
   },
@@ -330,7 +330,7 @@ const contatos = {
   'PR': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Curitiba',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Curitiba - Paraná/PR',
     email: 'vendas@saopedro.ind.br'
   },
@@ -338,7 +338,7 @@ const contatos = {
   'MT': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Cuiabá',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Cuiabá - Mato Grosso/MT',
     email: 'vendas@saopedro.ind.br'
   },
@@ -346,7 +346,7 @@ const contatos = {
   'MS': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Campo Grande',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Campo Grande - Mato Grosso do Sul/MS',
     email: 'vendas@saopedro.ind.br'
   },
@@ -354,7 +354,7 @@ const contatos = {
   'RO': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Porto Velho',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Porto Velho - Rondônia/RO',
     email: 'vendas@saopedro.ind.br'
   },
@@ -362,7 +362,7 @@ const contatos = {
   'AC': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Rio Branco',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Rio Branco - Acre/AC',
     email: 'vendas@saopedro.ind.br'
   },
@@ -370,7 +370,7 @@ const contatos = {
   'PI': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Teresina',
-    telefone: '(032) 3696-4444',
+    telefone: '(32) 3696-4444',
     endereco: 'Teresina - Piauí/PI',
     email: 'vendas@saopedro.ind.br'
   }
