@@ -5,7 +5,7 @@ const categorias = [
     slug: "linha-bau",
     imagem: "/images/semirreboque-furgao1.jpg",
     descricao: "Soluções fechadas para proteção de cargas com altura padrão de 3011mm e assoalho em chapa xadrez.",
-    video: "/videos/semirreboque_bau.mp4",
+    video: "/videos/LINHA BAU.mp4",
     informacoesTecnicas: [
       "Altura padrão: 3011mm",
       "Assoalho: Chapa xadrez 3/16\" (4,75mm)",
@@ -29,12 +29,15 @@ const categorias = [
     modelos: [
       {
         nome: "Semirreboque Baú 02 Eixos Juntos",
+        iconeEixo: "truck-axle-2.svg",
         imagens: [
           "/images/semirreboque-furgao1.jpg",
           "/images/semirreboque-furgao2.jpg",
           "/images/semirreboque-furgao3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bau-2-eixos-juntos.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "10500mm / 12500mm / 14600mm / 15400mm" },
@@ -46,11 +49,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Baú 02 Eixos Distanciados (1+1)",
+        iconeEixo: "truck-axle-1-1.svg",
         imagens: [
           "/images/semirreboque-furgao1.jpg",
           "/images/semirreboque-furgao2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bau-2-eixos-distanciados.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "10500mm / 12500mm / 14600mm / 15400mm" },
@@ -61,11 +67,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Baú 03 Eixos Juntos",
+        iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/semirreboque-furgao1.jpg",
           "/images/semirreboque-furgao3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bau-3-eixos-juntos.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -76,11 +85,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Baú 03 Eixos Distanciados (1+1+1)",
+        iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
           "/images/semirreboque-furgao1.jpg",
           "/images/semirreboque-furgao3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bau-3-eixos-distanciados.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -91,11 +103,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Baú 04 Eixos (1+3)",
+        iconeEixo: "truck-axle-1-3.svg",
         imagens: [
           "/images/semirreboque-furgao1.jpg",
           "/images/semirreboque-furgao3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bau-4-eixos.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -106,11 +121,14 @@ const categorias = [
       },
       {
         nome: "Bitrem Baú 02+02 Eixos",
+        iconeEixo: "truck-axle-2-2.svg",
         imagens: [
           "/images/semirreboque-furgao2.jpg",
           "/images/semirreboque-furgao3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bitrem-bau-2-2.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "12500+12500mm / 12500+13500mm (Rebaixado)" },
@@ -121,11 +139,14 @@ const categorias = [
       },
       {
         nome: "Super Bitrem Baú 03+03 Eixos",
+        iconeEixo: "truck-axle-3-3.svg",
         imagens: [
           "/images/semirreboque-furgao2.jpg",
           "/images/semirreboque-furgao3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/super-bitrem-bau-3-3.pdf",
+        documentos: {
+          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
           { chave: "Comprimento", valor: "12500+12500mm" },
@@ -141,7 +162,7 @@ const categorias = [
     slug: "linha-sider",
     imagem: "/images/semirreboque-sider1.jpg",
     descricao: "Facilidade no carregamento lateral com altura padrão de 3056mm.",
-    video: "/videos/semirreboque_bau.mp4",
+    video: "/videos/LINHA SIDER.mp4",
     informacoesTecnicas: [
       "Altura padrão: 3056mm",
       "Assoalho: Chapa xadrez 3/16\" (4,75mm)",
@@ -165,12 +186,15 @@ const categorias = [
     modelos: [
       {
         nome: "Semirreboque Sider 02 Eixos Juntos",
+        iconeEixo: "truck-axle-2.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg",
           "/images/semirreboque-sider3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/sider-2-eixos-juntos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "10500mm / 12500mm / 14600mm / 15400mm" },
@@ -182,11 +206,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Sider 02 Eixos Distanciados (1+1)",
+        iconeEixo: "truck-axle-1-1.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/sider-2-eixos-distanciados.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "10500mm / 12500mm / 14600mm / 15400mm" },
@@ -197,11 +224,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Sider 03 Eixos Juntos",
+        iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/sider-3-eixos-juntos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -212,11 +242,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Sider 03 Eixos Distanciados (1+1+1)",
+        iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/sider-3-eixos-distanciados.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -227,11 +260,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Sider 04 Eixos (1+3)",
+        iconeEixo: "truck-axle-1-3.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/sider-4-eixos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -242,11 +278,14 @@ const categorias = [
       },
       {
         nome: "Bitrem Sider 02+02 Eixos",
+        iconeEixo: "truck-axle-2-2.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bitrem-sider-2-2.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "12500+12500mm" },
@@ -257,11 +296,14 @@ const categorias = [
       },
       {
         nome: "Super Bitrem Sider 03+03 Eixos",
+        iconeEixo: "truck-axle-3-3.svg",
         imagens: [
           "/images/semirreboque-sider1.jpg",
           "/images/semirreboque-sider2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/super-bitrem-sider-3-3.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
           { chave: "Comprimento", valor: "12500+12500mm" },
@@ -277,7 +319,7 @@ const categorias = [
     slug: "linha-carga-seca",
     imagem: "/images/semirreboques.jpg",
     descricao: "Versatilidade para diversos tipos de carga com tampas ACM.",
-    video: "/videos/semirreboque_bau.mp4",
+    video: "/videos/LINHA CARGA SECA.mp4",
     informacoesTecnicas: [
       "Assoalho: Chapa xadrez 1/8\" (3,17mm)",
       "Tampas Carga Seca: Chapa ou ACM com 450mm / 900mm",
@@ -297,12 +339,15 @@ const categorias = [
     modelos: [
       {
         nome: "Semirreboque Carga Seca 02 Eixos Juntos",
+        iconeEixo: "truck-axle-2.svg",
         imagens: [
           "/images/semirreboques.jpg",
           "/images/semirreboques2.jpg",
           "/images/semirreboques3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/carga-seca-2-eixos-juntos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "10500mm / 11400mm" },
@@ -314,11 +359,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Carga Seca 02 Eixos Distanciados (1+1)",
+        iconeEixo: "truck-axle-1-1.svg",
         imagens: [
           "/images/semirreboques.jpg",
           "/images/semirreboques2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/carga-seca-2-eixos-distanciados.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "10500mm / 11400mm / 12400mm / 13500mm" },
@@ -329,11 +377,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Carga Seca 03 Eixos Juntos",
+        iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/semirreboques.jpg",
           "/images/semirreboques2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/carga-seca-3-eixos-juntos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "12400mm / 13500mm / 14100mm / 14500mm" },
@@ -344,11 +395,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Carga Seca 03 Eixos Distanciados (1+1+1)",
+        iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
           "/images/semirreboques.jpg",
           "/images/semirreboques2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/carga-seca-3-eixos-distanciados.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "12400mm / 13500mm / 14100mm / 14500mm" },
@@ -359,11 +413,14 @@ const categorias = [
       },
       {
         nome: "Bitrem Carga Seca 02+02 Eixos",
+        iconeEixo: "truck-axle-2-2.svg",
         imagens: [
           "/images/semirreboques.jpg",
           "/images/semirreboques2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/bitrem-carga-seca-2-2.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
           { chave: "Comprimento", valor: "7100+7100mm / 7500+7500mm / 12400+12400mm" },
@@ -400,12 +457,15 @@ const categorias = [
     modelos: [
       {
         nome: "Semirreboque Graneleiro 04 Eixos (1+3)",
+        iconeEixo: "truck-axle-1-3.svg",
         imagens: [
           "/images/carreta-graneleira1.jpg",
           "/images/carreta-graneleira2.jpg",
           "/images/carreta-graneleira3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/graneleira-4-eixos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
           { chave: "Comprimento", valor: "13500mm / 14100mm / 14500mm" },
@@ -417,11 +477,14 @@ const categorias = [
       },
       {
         nome: "Super Bitrem Graneleiro 03+03 Eixos",
+        iconeEixo: "truck-axle-3-3.svg",
         imagens: [
           "/images/carreta-graneleira1.jpg",
           "/images/carreta-graneleira2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/super-bitrem-graneleiro-3-3.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
           { chave: "Comprimento", valor: "9000+11400mm / 9500+12400mm / 12400+12400mm" },
@@ -454,12 +517,15 @@ const categorias = [
     modelos: [
       {
         nome: "Semirreboque Porta Container 03 Eixos - 20 Pés",
+        iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/vpc-buggy1.jpg",
           "/images/vpc-buggy2.jpg",
           "/images/vpc-buggy3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/vpc-20-pes.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "7700mm" },
@@ -471,11 +537,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Porta Container 03 Eixos - 40 Pés",
+        iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/vpc-buggy1.jpg",
           "/images/vpc-buggy2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/vpc-40-pes.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
           { chave: "Comprimento", valor: "12500 mm" },
@@ -486,11 +555,14 @@ const categorias = [
       },
       {
         nome: "Super Bitrem Porta Container 03+03 Eixos - 40+40 Pés",
+        iconeEixo: "truck-axle-3-3.svg",
         imagens: [
           "/images/vpc-buggy1.jpg",
           "/images/vpc-buggy2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/super-bitrem-vpc.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
           { chave: "Comprimento", valor: "12500+12500mm" },
@@ -524,12 +596,15 @@ const categorias = [
     modelos: [
       {
         nome: "Semirreboque Base 03 Eixos Juntos",
+        iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/base-carvoeira1.jpg",
           "/images/base-carvoeira2.jpg",
           "/images/base-carvoeira3.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/base-3-eixos-juntos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm / 15900mm" },
@@ -540,11 +615,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Base 03 Eixos Distanciados (1+1+1)",
+        iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
           "/images/base-carvoeira1.jpg",
           "/images/base-carvoeira2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/base-3-eixos-distanciados.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm" },
@@ -554,11 +632,14 @@ const categorias = [
       },
       {
         nome: "Semirreboque Base 04 Eixos (1+3)",
+        iconeEixo: "truck-axle-1-3.svg",
         imagens: [
           "/images/base-carvoeira1.jpg",
           "/images/base-carvoeira2.jpg"
         ],
-        desenhoTecnico: "/images/desenhos/base-4-eixos.pdf",
+        documentos: {
+          desenho: ""
+        },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
           { chave: "Comprimento", valor: "14600mm / 15400mm / 15900mm" },

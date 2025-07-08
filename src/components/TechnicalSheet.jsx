@@ -1,54 +1,60 @@
-// src/components/TechnicalSheet.jsx
 import React, { useState } from 'react';
-import { Download, FileText, Star, Book, Award, ChevronDown, ExternalLink } from 'lucide-react';
-import { floorPlan } from '@lucide/lab';
+import { Download, FileText, Book, Award, ChevronDown, ExternalLink, LayoutTemplate } from 'lucide-react';
 import TechnicalDocsService from '../services/technicalDocsService';
 
-const TechnicalSheet = ({ modelo, categoria }) => {
+const TechnicalSheet = ({ modelo, categoriaSlug }) => {
+  // 1. A cláusula de guarda é a primeira coisa a ser executada para evitar erros.
+  // Ela verifica se as props essenciais foram recebidas.
+  if (!modelo || !categoriaSlug) {
+    return null; // Não renderiza nada se os dados não estiverem prontos.
+  }
+
+  // 2. Estado para controlar a visibilidade do dropdown.
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   
-  // Converter categoria para slug
-  const categorySlug = categoria.toLowerCase().replace(/\s+/g, '-');
-  
-  // Obter documentos disponíveis
-  const documents = TechnicalDocsService.getModelDocuments(categorySlug, modelo.nome);
+  // 3. Obtém a lista de todos os tipos de documentos possíveis.
   const documentTypes = TechnicalDocsService.getAvailableDocumentTypes();
   
-  // Filtrar apenas documentos que existem
+  // 4. Filtra para encontrar apenas os documentos que REALMENTE existem para este modelo.
+  // Usamos as props corretas: `categoriaSlug` e `modelo.nome`.
   const availableDocuments = documentTypes.filter(type => 
-    TechnicalDocsService.hasDocument(categorySlug, modelo.nome, type.key)
+    TechnicalDocsService.hasDocument(categoriaSlug, modelo.nome, type.key)
   );
 
-  const handleDownload = (documentType) => {
-    const success = TechnicalDocsService.downloadDocument(categorySlug, modelo.nome, documentType);
+  const handleDownload = (documentTypeKey) => {
+    const success = TechnicalDocsService.downloadDocument(categoriaSlug, modelo.nome, documentTypeKey);
     if (success) {
-      setIsDropdownOpen(false);
+      setIsDropdownOpen(false); // Fecha o dropdown após o clique
     }
   };
 
+  // 5. Função auxiliar para mapear o nome do ícone para o componente de ícone real.
+  // Troquei 'floorPlan' por 'LayoutTemplate' que é mais padrão em lucide-react.
   const getIcon = (iconName) => {
     const icons = {
       FileText,
-      floorPlan,
+      Blueprint: LayoutTemplate, // Renomeado para corresponder ao serviço
       Book,
       Award
     };
-    return icons[iconName] || FileText;
+    return icons[iconName] || FileText; // Retorna um ícone padrão se não encontrar
   };
 
-  // Se não há documentos disponíveis, retorna versão simples
+  // ==========================================================
+  // LÓGICA DE RENDERIZAÇÃO CONDICIONAL (mantida da sua versão)
+  // ==========================================================
+
+  // Caso 1: Se não há documentos disponíveis.
   if (availableDocuments.length === 0) {
     return (
-      <div className="bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg p-3 border border-gray-300">
-        <div className="flex items-center gap-2 text-gray-600">
-          <FileText className="w-4 h-4" />
-          <span className="text-sm">Documentos em breve</span>
-        </div>
+      <div className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-red-500 rounded-lg shadow-md cursor-not-allowed opacity-70">
+        <FileText className="w-4 h-4" />
+        <span>Documentos em breve</span>
       </div>
     );
   }
 
-  // Se há apenas um documento, mostra botão simples
+  // Caso 2: Se há apenas UM documento, mostra um botão simples.
   if (availableDocuments.length === 1) {
     const doc = availableDocuments[0];
     const IconComponent = getIcon(doc.icon);
@@ -56,27 +62,27 @@ const TechnicalSheet = ({ modelo, categoria }) => {
     return (
       <button
         onClick={() => handleDownload(doc.key)}
-        className="bg-white text-red-600 px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-gray-50 transition-colors border border-white/20 shadow-sm"
+        className="bg-white cursor-pointer text-red-600 px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-gray-50 transition-colors border border-white/20 shadow-sm"
       >
         <IconComponent className="w-4 h-4" />
-        <span className="hidden sm:inline">{doc.label}</span>
-        <span className="sm:hidden">Docs</span>
-        <Download className="w-3 h-3" />
+        <span className="hidden sm:inline font-semibold">{doc.label}</span>
+        <span className="sm:hidden font-semibold">Doc</span>
+        <Download className="w-4 h-4 ml-1" />
       </button>
     );
   }
 
-  // Se há múltiplos documentos, mostra dropdown
+  // Caso 3: Se há MÚLTIPLOS documentos, mostra o botão com dropdown.
   return (
     <div className="relative">
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="bg-white text-red-600 px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-gray-50 transition-colors border border-white/20 shadow-sm"
+        className="bg-white cursor-pointer text-red-600 px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-gray-50 transition-colors border border-white/20 shadow-sm"
       >
         <FileText className="w-4 h-4" />
-        <span className="hidden sm:inline">Documentos</span>
-        <span className="sm:hidden">Docs</span>
-        <span className="bg-red-600 text-white text-xs px-1.5 py-0.5 rounded-full">
+        <span className="hidden sm:inline font-semibold">Documentos</span>
+        <span className="sm:hidden font-semibold">Docs</span>
+        <span className="bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full ml-1">
           {availableDocuments.length}
         </span>
         <ChevronDown 
@@ -84,19 +90,18 @@ const TechnicalSheet = ({ modelo, categoria }) => {
         />
       </button>
 
-      {/* Dropdown */}
+      {/* Menu Dropdown */}
       {isDropdownOpen && (
         <>
-          {/* Overlay */}
+          {/* Overlay para fechar o menu ao clicar fora */}
           <div 
             className="fixed inset-0 z-10"
             onClick={() => setIsDropdownOpen(false)}
           />
           
-          {/* Menu */}
           <div className="absolute top-full right-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-20">
             <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-gray-100">
-              Documentos Técnicos
+              Documentos Disponíveis
             </div>
             
             {availableDocuments.map((doc) => {
@@ -106,15 +111,15 @@ const TechnicalSheet = ({ modelo, categoria }) => {
                 <button
                   key={doc.key}
                   onClick={() => handleDownload(doc.key)}
-                  className="w-full px-3 py-2 text-left hover:bg-gray-50 flex items-center gap-3 transition-colors"
+                  className="w-full cursor-pointer px-3 py-2 text-left hover:bg-gray-100 flex items-center gap-3 transition-colors"
                 >
-                  <div className="bg-red-100 p-1.5 rounded">
+                  <div className="bg-red-50 p-1.5 rounded-md">
                     <IconComponent className="w-4 h-4 text-red-600" />
                   </div>
                   <div className="flex-1">
                     <div className="font-medium text-gray-900 text-sm">{doc.label}</div>
                   </div>
-                  <ExternalLink className="w-3 h-3 text-gray-400" />
+                  <ExternalLink className="w-4 h-4 text-gray-400" />
                 </button>
               );
             })}
