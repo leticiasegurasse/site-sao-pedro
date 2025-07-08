@@ -1,78 +1,35 @@
-// src/utils/slugUtils.js
-
-/**
- * Converte um nome/texto em slug URL-friendly
- * @param {string} texto - Texto a ser convertido
- * @returns {string} - Slug formatado
- */
-export const createSlug = (texto) => {
-    if (!texto) return '';
-
-    return texto
-        .toLowerCase()
-        .normalize('NFD') // Remove acentos
-        .replace(/[\u0300-\u036f]/g, '') // Remove diacríticos
-        .replace(/[^\w\s-]/g, '') // Remove caracteres especiais exceto hífens e espaços
-        .replace(/\s+/g, '-') // Substitui espaços por hífens
-        .replace(/-+/g, '-') // Remove hífens múltiplos
-        .replace(/^-|-$/g, ''); // Remove hífens do início e fim
+// Função para converter nome em slug
+export const createSlug = (nome) => {
+  return nome
+    .toLowerCase()
+    .normalize('NFD') // Remove acentos
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacríticos
+    .replace(/[^\w\s-]/g, '') // Remove caracteres especiais exceto hífens e espaços
+    .replace(/\s+/g, '-') // Substitui espaços por hífens
+    .replace(/-+/g, '-') // Remove hífens múltiplos
+    .replace(/^-|-$/g, ''); // Remove hífens do início e fim
 };
 
-/**
- * Converte um slug de volta para um formato mais legível
- * @param {string} slug - Slug a ser convertido
- * @returns {string} - Texto formatado
- */
+// Função para converter slug de volta para texto legível
 export const slugToText = (slug) => {
-    if (!slug) return '';
-
-    return slug
-        .replace(/-/g, ' ') // Substitui hífens por espaços
-        .replace(/\b\w/g, l => l.toUpperCase()); // Capitaliza primeira letra de cada palavra
+  return slug
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 };
 
-/**
- * Encontra um equipamento pelo slug
- * @param {Array} equipamentos - Array de equipamentos
- * @param {string} slug - Slug a ser procurado
- * @returns {Object|null} - Equipamento encontrado ou null
- */
+// Função para encontrar equipamento por slug
 export const findEquipmentBySlug = (equipamentos, slug) => {
-    if (!equipamentos || !slug) return null;
-
-    return equipamentos.find(equipamento =>
-        createSlug(equipamento.nome) === slug
-    );
+  return equipamentos.find(equip => createSlug(equip.nome) === slug);
 };
 
-/**
- * Gera URL para equipamento
- * @param {string} nomeEquipamento - Nome do equipamento
- * @returns {string} - URL formatada
- */
-export const getEquipmentUrl = (nomeEquipamento) => {
-    const slug = createSlug(nomeEquipamento);
-    return `/equipamentos/${slug}`;
+// Função para encontrar categoria por slug
+export const findCategoryBySlug = (categorias, slug) => {
+  return categorias.find(cat => cat.slug === slug);
 };
 
-/**
- * Exemplos de uso:
- * 
- * createSlug("Base Carvoeira") → "base-carvoeira"
- * createSlug("VPC – Veículo porta container (buggy)") → "vpc-veiculo-porta-container-buggy"
- * createSlug("Semirreboque Carga Seca") → "semirreboque-carga-seca"
- * 
- * slugToText("base-carvoeira") → "Base Carvoeira"
- * 
- * getEquipmentUrl("Base Carvoeira") → "/equipamentos/base-carvoeira"
- * 
- * findEquipmentBySlug(equipamentos, "base-carvoeira") → { nome: "Base Carvoeira", ... }
- */
-
-// Exportação default para facilitar import
-export default {
-    createSlug,
-    slugToText,
-    findEquipmentBySlug,
-    getEquipmentUrl
+// Função para obter equipamentos de uma categoria
+export const getEquipmentsByCategory = (equipamentos, categorySlug, categoriaMapeamento) => {
+  const nomesProdutos = categoriaMapeamento[categorySlug] || [];
+  return equipamentos.filter(equip => nomesProdutos.includes(equip.nome));
 };

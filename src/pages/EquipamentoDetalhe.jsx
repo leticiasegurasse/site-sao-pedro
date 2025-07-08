@@ -1,7 +1,7 @@
 // Exemplo: EquipamentoDetalhe simplificado com slugUtils
 import React, { useState, useRef, useEffect } from 'react';
 import MainLayout from '../layouts/MainLayout';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import equipamentos from '../mocks/equipamentosMock';
 import { findEquipmentBySlug, slugToText } from '../utils/slugUtils';
 import ContatoSection from '../components/ContatoSection';
@@ -75,9 +75,7 @@ const EquipamentoDetalhe = () => {
         </motion.div>
       </MainLayout>
     );
-
   }
-
 
   return (
     <MainLayout>
@@ -90,26 +88,15 @@ const EquipamentoDetalhe = () => {
         {/* Breadcrumb */}
         <div className="bg-[#e30613] p-4 sm:p-5 flex items-center gap-2 text-white text-base sm:text-lg font-light">
           <Container fullWidth>
-            <a href={`/equipamentos`}>
+            <Link to="/equipamentos">
               <span>Equipamentos</span>
-            </a>
+            </Link>
             <span className="mx-1">/</span>
             <span className="font-bold italic">{equipamento.nome}</span>
           </Container>
-
-
         </div>
 
-        {/* Imagem principal do equipamento 
-         <div className="w-full mx-auto flex justify-center">
-          <OptimizedImage
-            src={equipamento.imagens[0].replace('/public', '')}
-            alt={equipamento.nome}
-            className="w-full h-auto object-contain shadow-md"
-          />
-        </div> 
-        */}
-
+        {/* Imagem/Vídeo principal do equipamento */}
         <section className="w-full z-100">
           {equipamento?.video ? (
             <video
@@ -133,9 +120,6 @@ const EquipamentoDetalhe = () => {
           )}
         </section>
 
-
-
-
         <div className="w-full flex flex-col md:flex-row">
           {/* Nome do equipamento */}
           <div className="md:w-1/2 w-full bg-[#e30613] flex items-center justify-center p-6 sm:p-8">
@@ -154,22 +138,6 @@ const EquipamentoDetalhe = () => {
             ))}
           </div>
         </div>
-
-        {/* Imagens 
-        <div className="w-full flex flex-col md:flex-row justify-center items-center">
-          <OptimizedImage
-            src={equipamento.imagens[1].replace('/public', '')}
-            alt={equipamento.nome}
-            className="w-full md:w-[70%] h-60 sm:h-72 md:h-80 object-cover"
-          />
-          <OptimizedImage
-            src={equipamento.imagens[2].replace('/public', '')}
-            alt={equipamento.nome}
-            className="w-full md:w-[30%] h-60 sm:h-72 md:h-80 object-cover"
-          />
-        </div>
-*/}
-
 
         {/* Slider com setas, autoplay, bolinhas e transição suave */}
         <div
@@ -222,7 +190,6 @@ const EquipamentoDetalhe = () => {
             ))}
           </div>
         </div>
-
 
         {/* Outras versões */}
         <div className='bg-gray-100 w-full'>
