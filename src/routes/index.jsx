@@ -1,3 +1,4 @@
+// src/routes/index.jsx
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { ROUTES } from '../config/routes';
 import Home from '../pages/Home';
@@ -6,7 +7,6 @@ import Representantes from '../pages/Representantes';
 import Contato from '../pages/Contato';
 import Equipamentos from '../pages/Equipamentos';
 import CategoriaProdutos from '../pages/CategoriaProdutos';
-import EquipamentoDetalhe from '../pages/EquipamentoDetalhe';
 import ScrollToTop from '../components/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
 
@@ -21,10 +21,8 @@ const RouterWrapper = () => {
                 <Route path={ROUTES.representantes} element={<Representantes />} />
                 <Route path={ROUTES.contato} element={<Contato />} />
                 <Route path={ROUTES.equipamentos} element={<Equipamentos />} />
-                {/* Rota para categoria de produtos */}
+                {/* Rota para categoria de produtos - agora mostra todos os modelos da linha */}
                 <Route path="/equipamentos/:categoria" element={<CategoriaProdutos />} />
-                {/* Rota para equipamento específico */}
-                <Route path="/equipamentos/produto/:nome" element={<EquipamentoDetalhe />} />
             </Routes>
         </AnimatePresence>
     );
