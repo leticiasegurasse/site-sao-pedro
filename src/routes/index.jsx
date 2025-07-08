@@ -5,10 +5,10 @@ import SobreEmpresa from '../pages/SobreEmpresa';
 import Representantes from '../pages/Representantes';
 import Contato from '../pages/Contato';
 import Equipamentos from '../pages/Equipamentos';
+import CategoriaProdutos from '../pages/CategoriaProdutos';
 import EquipamentoDetalhe from '../pages/EquipamentoDetalhe';
 import ScrollToTop from '../components/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
-
 
 const RouterWrapper = () => {
     const location = useLocation();
@@ -21,7 +21,10 @@ const RouterWrapper = () => {
                 <Route path={ROUTES.representantes} element={<Representantes />} />
                 <Route path={ROUTES.contato} element={<Contato />} />
                 <Route path={ROUTES.equipamentos} element={<Equipamentos />} />
-                <Route path={ROUTES.equipamentoDetalhe} element={<EquipamentoDetalhe />} />
+                {/* Rota para categoria de produtos */}
+                <Route path="/equipamentos/:categoria" element={<CategoriaProdutos />} />
+                {/* Rota para equipamento específico */}
+                <Route path="/equipamentos/produto/:nome" element={<EquipamentoDetalhe />} />
             </Routes>
         </AnimatePresence>
     );

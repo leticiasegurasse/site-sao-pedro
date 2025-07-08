@@ -94,6 +94,28 @@ const CategoriaProdutos = () => {
           </Container>
         </div>
 
+        <section className="w-full z-100">
+          {categoriaInfo?.video ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto"
+            >
+              <source src={categoriaInfo.video} type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          ) : (
+            <div className="w-full mx-auto flex justify-center">
+              <OptimizedImage
+                src={categoriaInfo.imagens[0].replace('/public', '')}
+                alt={categoriaInfo.nome}
+                className="w-full h-auto object-contain shadow-md"
+              />
+            </div>
+          )}
+        </section>
         {/* Header da Categoria */}
         <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-16 sm:py-20">
           <Container>
@@ -106,8 +128,10 @@ const CategoriaProdutos = () => {
             </div>
           </Container>
         </div>
+        
 
         {/* Lista de Equipamentos */}
+        
         <section className="w-full py-12 sm:py-16">
           <Container>
             {equipamentosCategoria.length > 0 ? (
