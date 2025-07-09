@@ -193,7 +193,7 @@ const categorias = [
           "/images/semirreboque-sider3.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -230,7 +230,7 @@ const categorias = [
           "/images/semirreboque-sider2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -248,7 +248,7 @@ const categorias = [
           "/images/semirreboque-sider2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -266,7 +266,7 @@ const categorias = [
           "/images/semirreboque-sider2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -284,7 +284,7 @@ const categorias = [
           "/images/semirreboque-sider2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -302,7 +302,7 @@ const categorias = [
           "/images/semirreboque-sider2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -346,7 +346,7 @@ const categorias = [
           "/images/semirreboques3.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -365,7 +365,7 @@ const categorias = [
           "/images/semirreboques2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -383,7 +383,7 @@ const categorias = [
           "/images/semirreboques2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -401,7 +401,7 @@ const categorias = [
           "/images/semirreboques2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -419,7 +419,7 @@ const categorias = [
           "/images/semirreboques2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -464,7 +464,7 @@ const categorias = [
           "/images/carreta-graneleira3.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -483,7 +483,7 @@ const categorias = [
           "/images/carreta-graneleira2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -524,7 +524,7 @@ const categorias = [
           "/images/vpc-buggy3.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -543,7 +543,7 @@ const categorias = [
           "/images/vpc-buggy2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -561,7 +561,7 @@ const categorias = [
           "/images/vpc-buggy2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -603,7 +603,7 @@ const categorias = [
           "/images/base-carvoeira3.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -621,7 +621,7 @@ const categorias = [
           "/images/base-carvoeira2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -638,7 +638,7 @@ const categorias = [
           "/images/base-carvoeira2.jpg"
         ],
         documentos: {
-          desenho: ""
+          desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },

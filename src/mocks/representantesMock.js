@@ -3,16 +3,16 @@ const contatos = {
   'SP': [
     {
       nome: 'Jacinto Ferreira',
-      cidade: 'Baixada Santista',
-      regiao: 'DDDs 11 (exceto grande SP), 13, 14, 15, 16, 18 e 19',
+      cidade: 'Interior de São Paulo',
+      regiao: 'Interior de São Paulo (DDDs 11, 13, 14, 15, 16 e 19)',
       telefone: '(11) 99932-9584',
-      endereco: 'Baixada Santista - São Paulo/SP',
+      endereco: 'Interior de São Paulo - São Paulo/SP',
       email: 'jacintonevesferreira@gmail.com'
     },
     {
-      nome: 'Paulo Henrique',
+      nome: 'Paulo Henrique Bertolacini',
       cidade: 'São Paulo',
-      regiao: 'Região metropolitana de São Paulo',
+      regiao: 'Região Metropolitana de SP',
       telefone: '(11) 99136-7457',
       telefone2: '(11) 98896-6161',
       contato2: 'Ricardo Vergani',
@@ -22,17 +22,25 @@ const contatos = {
     },
     {
       nome: 'Rodrigo Menis',
-      cidade: 'Sul de Minas e Vale do Paraíba',
+      cidade: 'Vale do Paraíba',
+      regiao: 'SÃO PAULO (Vale do Paraíba - DDD 12)',
       telefone: '(19) 99330-8949',
-      endereco: 'Sul de Minas e Vale do Paraíba - São Paulo/SP',
-      email: 'rodrigo@hellotur.com.br'
+      telefone2: '(11) 99578-2278',
+      telefone3: '(35) 98443-3000',
+      contato2: 'Alan',
+      contato3: 'Renan',
+      endereco: 'Vale do Paraíba - São Paulo/SP',
+      email: 'rodrigo@hellotur.com.br',
+      email2: 'alan@hellotur.com.br',
+      email3: 'rochamartinsimplementos@hotmail.com'
     },
     {
-      nome: 'Sérgio Barbosa (Prego)',
-      cidade: 'DDD 17',
-      telefone: '(17) 99772-8370',
-      endereco: 'DDD 17 - São Paulo/SP',
-      email: 'comercial@rodoprego.com.br'
+      nome: 'Carlo Rodolfo Meireles',
+      cidade: 'Região de Presidente Prudente',
+      regiao: 'SÃO PAULO (DDD 18)',
+      telefone: '(18) 99773-3307',
+      endereco: 'DDD 18 - São Paulo/SP',
+      email: 'r7.rossini@gmail.com'
     }
   ],
 
@@ -40,22 +48,29 @@ const contatos = {
     {
       nome: 'Felipe Paschoalin',
       cidade: 'Rio de Janeiro',
-      regiao: 'Grande Rio',
-      telefone: '(32) 98405-0345',
+      regiao: 'Rio de Janeiro (DDD 21)',
+      telefone: '(21) 98229-7336',
       endereco: 'Grande Rio - Rio de Janeiro/RJ',
       email: 'saopedrorj@saopedro.ind.br'
     },
     {
-      nome: 'Francisco José',
+      nome: 'Francisco José Correia',
       cidade: 'Região dos Lagos',
+      regiao: 'Região dos Lagos (DDDs 22 e 24)',
       telefone: '(21) 98098-1010',
+      telefone2: '(21) 98383-2188',
+      telefone3: '(21) 98694-0040',
+      contato2: 'João Pedro Correia',
+      contato3: 'José Renato',
       endereco: 'Região dos Lagos - Rio de Janeiro/RJ',
-      email: 'francisco@dutruck.com.br'
+      email: 'francisco@dutruck.com.br',
+      email2: 'jpomc@hotmail.com',
+      email3: 'mjjconsultoria@hotmail.com'
     },
     {
       nome: 'Leonel Oliveira',
       cidade: 'Sul Fluminense',
-      regiao: 'Sul Fluminense, Zona da Mata, Leste de Minas, Região Serrana RJ, Norte de Minas e Campos das Vertentes',
+      regiao: 'MINAS GERAIS (DDDs 32,22,24,33,34,38)',
       telefone: '(32) 99804-6706',
       endereco: 'Sul Fluminense - Rio de Janeiro/RJ',
       email: 'vendas.fabrica@saopedro.ind.br'
@@ -66,23 +81,15 @@ const contatos = {
     {
       nome: 'Gilvan Borges',
       cidade: 'Vitória',
-      regiao: 'Grande Vitória e região sul do Espírito Santo',
+      regiao: 'ESPÍRITO SANTO',
       telefone: '(28) 99900-4650',
       endereco: 'Grande Vitória - Espírito Santo/ES',
       email: 'gilvanpessini@hotmail.com'
     },
     {
-      nome: 'Josiléia Cândido da Silva Representações',
-      cidade: 'Região DDD 27 e 28',
-      telefone: '(28) 99900-4850',
-      contato: 'Gilvan',
-      endereco: 'Região DDD 27 e 28 - Espírito Santo/ES',
-      email: 'gilvanpessini@hotmail.com'
-    },
-    {
-      nome: 'Roberto Moura',
+      nome: 'Roberto Wolf',
       cidade: 'Norte do Espírito Santo',
-      regiao: 'Região norte do Espírito Santo',
+      regiao: 'ESPÍRITO SANTO',
       telefone: '(27) 99906-0678',
       endereco: 'Norte do Espírito Santo/ES',
       email: 'robertowollf@gmail.com'
@@ -93,7 +100,7 @@ const contatos = {
     {
       nome: 'Leonel Oliveira',
       cidade: 'Zona da Mata',
-      regiao: 'Sul Fluminense, Zona da Mata, Leste de Minas, Região Serrana RJ, Norte de Minas e Campos das Vertentes',
+      regiao: 'MINAS GERAIS (DDDs 32,22,24,33,34,38)',
       telefone: '(32) 99804-6706',
       endereco: 'Zona da Mata - Minas Gerais/MG',
       email: 'vendas.fabrica@saopedro.ind.br'
@@ -101,24 +108,39 @@ const contatos = {
     {
       nome: 'Rodrigo Menis',
       cidade: 'Sul de Minas',
-      regiao: 'Sul de Minas e Vale do Paraíba',
+      regiao: 'Sul de MINAS GERAIS (DDD 35)',
       telefone: '(19) 99330-8949',
+      telefone2: '(11) 99578-2278',
+      telefone3: '(35) 98443-3000',
+      contato2: 'Alan',
+      contato3: 'Renan',
       endereco: 'Sul de Minas - Minas Gerais/MG',
-      email: 'rodrigo@hellotur.com.br'
+      email: 'rodrigo@hellotur.com.br',
+      email2: 'alan@hellotur.com.br',
+      email3: 'rochamartinsimplementos@hotmail.com'
     },
     {
       nome: 'Vanusa Normandia',
       cidade: 'Belo Horizonte',
-      regiao: 'Região DDD 31',
+      regiao: 'MINAS GERAIS (DDD 31)',
       telefone: '(31) 98359-9010',
-      telefone2: '(32) 99806-1422',
-      telefone3: '(32) 99998-1408',
-      telefoneFixo: '(31) 3911-7007',
-      contato2: 'Fábio Pereira',
-      contato3: 'Rosane',
+      telefone2: '(31) 98303-8883',
+      telefone3: '(31) 99997-1910',
+      telefone4: '(32) 99981-4088',
+      contato2: 'Ronaldo',
+      contato3: 'Rafael',
+      contato4: 'Rosane Ferreira',
       endereco: 'Belo Horizonte - Minas Gerais/MG',
       email: 'saopedrobh@saopedro.ind.br',
       email2: 'saopedrobh.sec@saopedro.ind.br'
+    },
+    {
+      nome: 'Cleber Ambrosio',
+      cidade: 'Juiz de Fora',
+      regiao: 'Juiz de Fora',
+      telefone: '(32) 98415-8525',
+      endereco: 'Juiz de Fora - Minas Gerais/MG',
+      email: 'cleberambroziojf57@gmail.com'
     }
   ],
 
@@ -126,191 +148,282 @@ const contatos = {
     {
       nome: 'Marcos Lopes',
       cidade: 'Feira de Santana',
-      regiao: 'Feira de Santana e região',
-      telefone: '(75) 99919-8106',
+      regiao: 'BAHIA (exceto Salvador e região metropolitana)',
+      telefone: '(75) 99119-8106',
       telefone2: '(75) 99231-6703',
       telefone3: '(75) 98175-5005',
       telefone4: '(75) 99851-3539',
       contato2: 'Marina',
       contato3: 'Daiane',
-      contato4: 'Fabrício',
+      contato4: 'Fabricio Lopes',
       endereco: 'Feira de Santana - Bahia/BA',
-      email: 'alfatruck.financeiro@gmail.com',
-      email2: 'marcoslopes.saopedro@gmail.com'
+      email: 'marcoslopes.saopedro@gmail.com',
+      email2: 'alfatruck.financeiro@gmail.com'
     },
     {
-      nome: 'Stanislau Maciel',
+      nome: 'Estanislau Maciel',
       cidade: 'Salvador',
-      regiao: 'Grande Salvador',
+      regiao: 'SALVADOR e Região Metropolitana',
       telefone: '(71) 99992-1144',
       telefone2: '(71) 99971-6799',
-      contato2: 'Iuri Maciel',
+      contato2: 'Iuri Rigaud',
       endereco: 'Grande Salvador - Bahia/BA',
       email: 'estan.grimaldi@gmail.com',
       email2: 'vendas.4a@gmail.com'
+    },
+    {
+      nome: 'Dirceu Clara',
+      cidade: 'Região Sudoeste da Bahia',
+      regiao: 'BAHIA (DDDs 73 e 77)',
+      telefone: '(77) 99148-2847',
+      telefone2: '(77) 99822-2091',
+      telefone3: '(75) 99190-1116',
+      contato2: 'Ingrid Ribeiro',
+      contato3: 'Jonatas Nascimento',
+      endereco: 'Região Sudoeste - Bahia/BA',
+      email: 'vendas.pastre.amc@gmail.com'
     }
   ],
 
-  // Estados com representante único mas múltiplos contatos
   'GO': {
-    nome: 'Deolindo Júnior',
+    nome: 'Diolindo Junior',
     cidade: 'Goiânia',
-    regiao: 'Estados de GO, MA, TO e Distrito Federal',
+    regiao: 'GOIÁS, TOCANTINS, MARANHÃO e DF',
     telefone: '(62) 99919-1478',
-    telefone2: '(62) 99942-1695',
-    contato2: 'Paulo Augusto',
+    telefone2: '(62) 99661-4645',
+    telefone3: '(62) 99942-1695',
+    contato2: 'João Pedro Mahnic',
+    contato3: 'Paulo Augusto da Silva',
     endereco: 'Goiânia - Goiás/GO',
     email: 'junior@mahnic.com.br',
-    email2: 'joaopedro@mahnic.com.br'
+    email2: 'joaopedro@mahnic.com.br',
+    email3: 'paulo.mahnicrepresentacoes@gmail.com'
   },
 
   'DF': {
-    nome: 'Deolindo Júnior',
+    nome: 'Diolindo Junior',
     cidade: 'Brasília',
-    regiao: 'Estados de GO, MA, TO e Distrito Federal',
+    regiao: 'GOIÁS, TOCANTINS, MARANHÃO e DF',
     telefone: '(62) 99919-1478',
-    telefone2: '(62) 99942-1695',
-    contato2: 'Paulo Augusto',
+    telefone2: '(62) 99661-4645',
+    telefone3: '(62) 99942-1695',
+    contato2: 'João Pedro Mahnic',
+    contato3: 'Paulo Augusto da Silva',
     endereco: 'Brasília - Distrito Federal/DF',
     email: 'junior@mahnic.com.br',
-    email2: 'joaopedro@mahnic.com.br'
+    email2: 'joaopedro@mahnic.com.br',
+    email3: 'paulo.mahnicrepresentacoes@gmail.com'
   },
 
   'AM': {
-    nome: 'Túlio Veronese',
+    nome: 'Eduardo Oliveira',
     cidade: 'Manaus',
-    regiao: 'Estados do AM, AP, PA e RR',
-    telefone: '(91) 99182-2706',
-    telefone2: '(91) 99123-6762',
-    contato2: 'Eduardo Oliveira',
+    regiao: 'PARÁ, AMAPÁ, RORAIMA, AMAZONAS',
+    telefone: '(91) 99123-6762',
+    telefone2: '(91) 99182-2706',
+    telefone3: '(91) 99341-3453',
+    telefone4: '(92) 8823-4773',
+    contato2: 'Túlio Veronese',
+    contato3: 'Danyelli',
+    contato4: 'Afonso',
     endereco: 'Manaus - Amazonas/AM',
-    email: 'tulio@amazoniaimplementos.com.br',
-    email2: 'eduardo@amazoniaimplementos.com.br'
+    email: 'eduardo@amazoniaimplementos.com.br',
+    email2: 'tulio@amazoniaimplementos.com.br',
+    email3: 'comercial@amazoniaimplementos.com.br',
+    email4: 'vendasguindastes@amazonsolucoesindustriais.com.br'
   },
 
   'RR': {
-    nome: 'Túlio Veronese',
+    nome: 'Eduardo Oliveira',
     cidade: 'Boa Vista',
-    regiao: 'Estados do AM, AP, PA e RR',
-    telefone: '(91) 99182-2706',
-    telefone2: '(91) 99123-6762',
-    contato2: 'Eduardo Oliveira',
+    regiao: 'PARÁ, AMAPÁ, RORAIMA',
+    telefone: '(91) 99123-6762',
+    telefone2: '(91) 99182-2706',
+    telefone3: '(91) 99341-3453',
+    contato2: 'Túlio Veronese',
+    contato3: 'Danyelli',
     endereco: 'Boa Vista - Roraima/RR',
-    email: 'tulio@amazoniaimplementos.com.br',
-    email2: 'eduardo@amazoniaimplementos.com.br'
+    email: 'eduardo@amazoniaimplementos.com.br',
+    email2: 'tulio@amazoniaimplementos.com.br',
+    email3: 'comercial@amazoniaimplementos.com.br'
   },
 
   'PA': {
-    nome: 'Túlio Veronese',
+    nome: 'Eduardo Oliveira',
     cidade: 'Belém',
-    regiao: 'Estados do AM, AP, PA e RR',
-    telefone: '(91) 99182-2706',
-    telefone2: '(91) 99123-6762',
-    contato2: 'Eduardo Oliveira',
+    regiao: 'PARÁ, AMAPÁ, RORAIMA',
+    telefone: '(91) 99123-6762',
+    telefone2: '(91) 99182-2706',
+    telefone3: '(91) 99341-3453',
+    contato2: 'Túlio Veronese',
+    contato3: 'Danyelli',
     endereco: 'Belém - Pará/PA',
-    email: 'tulio@amazoniaimplementos.com.br',
-    email2: 'eduardo@amazoniaimplementos.com.br'
+    email: 'eduardo@amazoniaimplementos.com.br',
+    email2: 'tulio@amazoniaimplementos.com.br',
+    email3: 'comercial@amazoniaimplementos.com.br'
   },
 
   'AP': {
-    nome: 'Túlio Veronese',
+    nome: 'Eduardo Oliveira',
     cidade: 'Macapá',
-    regiao: 'Estados do AM, AP, PA e RR',
-    telefone: '(91) 99182-2706',
-    telefone2: '(91) 99123-6762',
-    contato2: 'Eduardo Oliveira',
+    regiao: 'PARÁ, AMAPÁ, RORAIMA',
+    telefone: '(91) 99123-6762',
+    telefone2: '(91) 99182-2706',
+    telefone3: '(91) 99341-3453',
+    contato2: 'Túlio Veronese',
+    contato3: 'Danyelli',
     endereco: 'Macapá - Amapá/AP',
-    email: 'tulio@amazoniaimplementos.com.br',
-    email2: 'eduardo@amazoniaimplementos.com.br'
+    email: 'eduardo@amazoniaimplementos.com.br',
+    email2: 'tulio@amazoniaimplementos.com.br',
+    email3: 'comercial@amazoniaimplementos.com.br'
   },
 
   'TO': {
-    nome: 'Deolindo Júnior',
+    nome: 'Diolindo Junior',
     cidade: 'Palmas',
-    regiao: 'Estados de GO, MA, TO e Distrito Federal',
+    regiao: 'GOIÁS, TOCANTINS, MARANHÃO e DF',
     telefone: '(62) 99919-1478',
-    telefone2: '(62) 99942-1695',
-    contato2: 'Paulo Augusto',
+    telefone2: '(62) 99661-4645',
+    telefone3: '(62) 99942-1695',
+    contato2: 'João Pedro Mahnic',
+    contato3: 'Paulo Augusto da Silva',
     endereco: 'Palmas - Tocantins/TO',
     email: 'junior@mahnic.com.br',
-    email2: 'joaopedro@mahnic.com.br'
+    email2: 'joaopedro@mahnic.com.br',
+    email3: 'paulo.mahnicrepresentacoes@gmail.com'
   },
 
   'MA': {
-    nome: 'Deolindo Júnior',
+    nome: 'Diolindo Junior',
     cidade: 'São Luís',
-    regiao: 'Estados de GO, MA, TO e Distrito Federal',
+    regiao: 'GOIÁS, TOCANTINS, MARANHÃO e DF',
     telefone: '(62) 99919-1478',
-    telefone2: '(62) 99942-1695',
-    contato2: 'Paulo Augusto',
+    telefone2: '(62) 99661-4645',
+    telefone3: '(62) 99942-1695',
+    contato2: 'João Pedro Mahnic',
+    contato3: 'Paulo Augusto da Silva',
     endereco: 'São Luís - Maranhão/MA',
     email: 'junior@mahnic.com.br',
-    email2: 'joaopedro@mahnic.com.br'
+    email2: 'joaopedro@mahnic.com.br',
+    email3: 'paulo.mahnicrepresentacoes@gmail.com'
   },
 
   'CE': {
-    nome: 'Georgiana',
+    nome: 'Georgiana Jereissati',
     cidade: 'Fortaleza',
-    regiao: 'Estados do CE e RN',
+    regiao: 'CEARÁ, RIO GRANDE DO NORTE',
     telefone: '(85) 98899-9149',
     telefone2: '(85) 98899-9147',
-    telefone3: '(85) 99207-8899',
-    contato2: 'Leonardo',
-    contato3: 'Roberto',
+    telefone3: '(85) 99207-8809',
+    contato2: 'Leonardo Jereissati',
+    contato3: 'Roberto Fermanian',
     endereco: 'Fortaleza - Ceará/CE',
-    email: 'contato@saopedro.ind.br' // Não havia email específico
+    email: 'rrivasrep@gmail.com',
+    email2: 'leonardo.jereissati@gmail.com',
+    email3: 'roberto.fermanian@gmail.com'
   },
 
   'RN': {
-    nome: 'Georgiana',
+    nome: 'Georgiana Jereissati',
     cidade: 'Natal',
-    regiao: 'Estados do CE e RN',
+    regiao: 'CEARÁ, RIO GRANDE DO NORTE',
     telefone: '(85) 98899-9149',
     telefone2: '(85) 98899-9147',
-    telefone3: '(85) 99207-8899',
-    contato2: 'Leonardo',
-    contato3: 'Roberto',
+    telefone3: '(85) 99207-8809',
+    contato2: 'Leonardo Jereissati',
+    contato3: 'Roberto Fermanian',
     endereco: 'Natal - Rio Grande do Norte/RN',
-    email: 'contato@saopedro.ind.br' // Não havia email específico
+    email: 'rrivasrep@gmail.com',
+    email2: 'leonardo.jereissati@gmail.com',
+    email3: 'roberto.fermanian@gmail.com'
   },
 
   'PB': {
     nome: 'Lisandro Ribeiro',
     cidade: 'João Pessoa',
-    regiao: 'Estados do AL, PB, PE e SE',
+    regiao: 'PARAÍBA, PERNAMBUCO, ALAGOAS, SERGIPE',
     telefone: '(81) 98690-8580',
+    telefone2: '(48) 99828-1141',
+    contato2: 'Daniela',
     endereco: 'João Pessoa - Paraíba/PB',
-    email: 'cglconecta.vendas@gmail.com'
+    email: 'cglconecta.vendas@gmail.com',
+    email2: 'cglconecta@gmail.com'
   },
 
   'PE': {
     nome: 'Lisandro Ribeiro',
     cidade: 'Recife',
-    regiao: 'Estados do AL, PB, PE e SE',
+    regiao: 'PARAÍBA, PERNAMBUCO, ALAGOAS, SERGIPE',
     telefone: '(81) 98690-8580',
+    telefone2: '(48) 99828-1141',
+    contato2: 'Daniela',
     endereco: 'Recife - Pernambuco/PE',
-    email: 'cglconecta.vendas@gmail.com'
+    email: 'cglconecta.vendas@gmail.com',
+    email2: 'cglconecta@gmail.com'
   },
 
   'AL': {
     nome: 'Lisandro Ribeiro',
     cidade: 'Maceió',
-    regiao: 'Estados do AL, PB, PE e SE',
+    regiao: 'PARAÍBA, PERNAMBUCO, ALAGOAS, SERGIPE',
     telefone: '(81) 98690-8580',
+    telefone2: '(48) 99828-1141',
+    contato2: 'Daniela',
     endereco: 'Maceió - Alagoas/AL',
-    email: 'cglconecta.vendas@gmail.com'
+    email: 'cglconecta.vendas@gmail.com',
+    email2: 'cglconecta@gmail.com'
   },
 
   'SE': {
     nome: 'Lisandro Ribeiro',
     cidade: 'Aracaju',
-    regiao: 'Estados do AL, PB, PE e SE',
+    regiao: 'PARAÍBA, PERNAMBUCO, ALAGOAS, SERGIPE',
     telefone: '(81) 98690-8580',
+    telefone2: '(48) 99828-1141',
+    contato2: 'Daniela',
     endereco: 'Aracaju - Sergipe/SE',
-    email: 'cglconecta.vendas@gmail.com'
+    email: 'cglconecta.vendas@gmail.com',
+    email2: 'cglconecta@gmail.com'
   },
 
-  // Estados atendidos diretamente pela São Pedro
+  'MS': {
+    nome: 'Ana Claudia Ribeiro',
+    cidade: 'Campo Grande',
+    regiao: 'MATO GROSSO DO SUL',
+    telefone: '(67) 99621-3336',
+    telefone2: '(67) 99663-9492',
+    contato2: 'Marcos Topal',
+    endereco: 'Campo Grande - Mato Grosso do Sul/MS',
+    email: 'anarepresentacoes01@gmail.com'
+  },
+
+  'PR': {
+    nome: 'Jean Mauricio da Mota',
+    cidade: 'Curitiba',
+    regiao: 'PARANÁ',
+    telefone: '(54) 99994-2198',
+    endereco: 'Curitiba - Paraná/PR',
+    email: 'jean_soares@outlook.com'
+  },
+  
+  'RO': {
+    nome: 'José Edmilson Polla',
+    cidade: 'Porto Velho',
+    regiao: 'RONDÔNIA e ACRE',
+    telefone: '(69) 98486-5000',
+    endereco: 'Porto Velho - Rondônia/RO',
+    email: 'implenorteimplementos@hotmail.com'
+  },
+
+  'AC': {
+    nome: 'José Edmilson Polla',
+    cidade: 'Rio Branco',
+    regiao: 'RONDÔNIA e ACRE',
+    telefone: '(69) 98486-5000',
+    endereco: 'Rio Branco - Acre/AC',
+    email: 'implenorteimplementos@hotmail.com'
+  },
+  
   'RS': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Porto Alegre',
@@ -327,43 +440,11 @@ const contatos = {
     email: 'vendas@saopedro.ind.br'
   },
 
-  'PR': {
-    nome: 'São Pedro Implementos Rodoviários',
-    cidade: 'Curitiba',
-    telefone: '(32) 3696-4444',
-    endereco: 'Curitiba - Paraná/PR',
-    email: 'vendas@saopedro.ind.br'
-  },
-
   'MT': {
     nome: 'São Pedro Implementos Rodoviários',
     cidade: 'Cuiabá',
     telefone: '(32) 3696-4444',
     endereco: 'Cuiabá - Mato Grosso/MT',
-    email: 'vendas@saopedro.ind.br'
-  },
-
-  'MS': {
-    nome: 'São Pedro Implementos Rodoviários',
-    cidade: 'Campo Grande',
-    telefone: '(32) 3696-4444',
-    endereco: 'Campo Grande - Mato Grosso do Sul/MS',
-    email: 'vendas@saopedro.ind.br'
-  },
-
-  'RO': {
-    nome: 'São Pedro Implementos Rodoviários',
-    cidade: 'Porto Velho',
-    telefone: '(32) 3696-4444',
-    endereco: 'Porto Velho - Rondônia/RO',
-    email: 'vendas@saopedro.ind.br'
-  },
-
-  'AC': {
-    nome: 'São Pedro Implementos Rodoviários',
-    cidade: 'Rio Branco',
-    telefone: '(32) 3696-4444',
-    endereco: 'Rio Branco - Acre/AC',
     email: 'vendas@saopedro.ind.br'
   },
 
