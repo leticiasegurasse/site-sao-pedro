@@ -1,9 +1,10 @@
 // src/mocks/categoriasMock.js
 const categorias = [
+  // Linha Baú
   {
     nome: "Linha Baú",
     slug: "linha-bau",
-    imagem: "/images/semirreboque-furgao1.jpg",
+    imagem: "/images/bau/bau-09896.jpg",
     descricao: "Soluções fechadas para proteção de cargas com altura padrão de 3011mm e assoalho em chapa xadrez.",
     video: "/videos/LINHA BAU.mp4",
     informacoesTecnicas: [
@@ -31,9 +32,19 @@ const categorias = [
         nome: "Semirreboque Baú 02 Eixos Juntos",
         iconeEixo: "truck-axle-2.svg",
         imagens: [
-          "/images/semirreboque-furgao1.jpg",
-          "/images/semirreboque-furgao2.jpg",
-          "/images/semirreboque-furgao3.jpg"
+              "/images/bau/bau-09896.jpg", 
+              "/images/bau/bau-09898.jpg", 
+              "/images/bau/bau-09899.jpg",
+              "/images/bau/bau-09900.jpg",
+              "/images/bau/bau-09901.jpg",
+              "/images/bau/bau-09903.jpg",
+              "/images/bau/bau-09905.jpg",
+              "/images/bau/bau-09906.jpg",
+              "/images/bau/bau-09907.jpg",
+              "/images/bau/bau-09908.jpg",
+              "/images/bau/bau-09910.jpg",
+              "/images/bau/bau-09912.jpg",
+              "/images/bau/bau-09914.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -51,8 +62,6 @@ const categorias = [
         nome: "Semirreboque Baú 02 Eixos Distanciados (1+1)",
         iconeEixo: "truck-axle-1-1.svg",
         imagens: [
-          "/images/semirreboque-furgao1.jpg",
-          "/images/semirreboque-furgao2.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -69,8 +78,6 @@ const categorias = [
         nome: "Semirreboque Baú 03 Eixos Juntos",
         iconeEixo: "truck-axle-3.svg",
         imagens: [
-          "/images/semirreboque-furgao1.jpg",
-          "/images/semirreboque-furgao3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -87,8 +94,6 @@ const categorias = [
         nome: "Semirreboque Baú 03 Eixos Distanciados (1+1+1)",
         iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
-          "/images/semirreboque-furgao1.jpg",
-          "/images/semirreboque-furgao3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -105,8 +110,6 @@ const categorias = [
         nome: "Semirreboque Baú 04 Eixos (1+3)",
         iconeEixo: "truck-axle-1-3.svg",
         imagens: [
-          "/images/semirreboque-furgao1.jpg",
-          "/images/semirreboque-furgao3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -123,8 +126,6 @@ const categorias = [
         nome: "Bitrem Baú 02+02 Eixos",
         iconeEixo: "truck-axle-2-2.svg",
         imagens: [
-          "/images/semirreboque-furgao2.jpg",
-          "/images/semirreboque-furgao3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -141,8 +142,6 @@ const categorias = [
         nome: "Super Bitrem Baú 03+03 Eixos",
         iconeEixo: "truck-axle-3-3.svg",
         imagens: [
-          "/images/semirreboque-furgao2.jpg",
-          "/images/semirreboque-furgao3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
@@ -157,10 +156,12 @@ const categorias = [
       }
     ]
   },
+  
+  // Linha Sider
   {
     nome: "Linha Sider",
     slug: "linha-sider",
-    imagem: "/images/semirreboque-sider1.jpg",
+    imagem: "images/sider/sider-09930.jpg",
     descricao: "Facilidade no carregamento lateral com altura padrão de 3056mm.",
     video: "/videos/LINHA SIDER.mp4",
     informacoesTecnicas: [
@@ -188,9 +189,15 @@ const categorias = [
         nome: "Semirreboque Sider 02 Eixos Juntos",
         iconeEixo: "truck-axle-2.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg",
-          "/images/semirreboque-sider3.jpg"
+          "/images/sider/sider-09928.jpg",
+          "/images/sider/sider-09933.jpg",
+          "/images/sider/sider-09925.jpg",
+          "/images/sider/sider-09930.jpg",
+          "/images/sider/sider-09923.jpg",
+          "/images/sider/sider-09922.jpg",
+          "/images/sider/sider-09919.jpg",
+          "/images/sider/sider-09918.jpg",
+          "/images/sider/sider-09915.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
@@ -208,11 +215,10 @@ const categorias = [
         nome: "Semirreboque Sider 02 Eixos Distanciados (1+1)",
         iconeEixo: "truck-axle-1-1.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg"
+
         ],
         documentos: {
-          desenho: ""
+            desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -226,8 +232,7 @@ const categorias = [
         nome: "Semirreboque Sider 03 Eixos Juntos",
         iconeEixo: "truck-axle-3.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
@@ -244,8 +249,7 @@ const categorias = [
         nome: "Semirreboque Sider 03 Eixos Distanciados (1+1+1)",
         iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
@@ -262,8 +266,7 @@ const categorias = [
         nome: "Semirreboque Sider 04 Eixos (1+3)",
         iconeEixo: "truck-axle-1-3.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
@@ -280,8 +283,7 @@ const categorias = [
         nome: "Bitrem Sider 02+02 Eixos",
         iconeEixo: "truck-axle-2-2.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
@@ -298,8 +300,7 @@ const categorias = [
         nome: "Super Bitrem Sider 03+03 Eixos",
         iconeEixo: "truck-axle-3-3.svg",
         imagens: [
-          "/images/semirreboque-sider1.jpg",
-          "/images/semirreboque-sider2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
@@ -314,10 +315,12 @@ const categorias = [
       }
     ]
   },
+
+  // Linha Carga Seca
   {
     nome: "Linha Carga Seca",
     slug: "linha-carga-seca",
-    imagem: "/images/semirreboques.jpg",
+    imagem: "/images/carga-seca/carga-seca-09942.jpg",
     descricao: "Versatilidade para diversos tipos de carga com tampas ACM.",
     video: "/videos/LINHA CARGA SECA.mp4",
     informacoesTecnicas: [
@@ -341,9 +344,15 @@ const categorias = [
         nome: "Semirreboque Carga Seca 02 Eixos Juntos",
         iconeEixo: "truck-axle-2.svg",
         imagens: [
-          "/images/semirreboques.jpg",
-          "/images/semirreboques2.jpg",
-          "/images/semirreboques3.jpg"
+          "/images/carga-seca/carga-seca-09948.jpg",
+          "/images/carga-seca/carga-seca-09947.jpg",
+          "/images/carga-seca/carga-seca-09945.jpg",
+          "/images/carga-seca/carga-seca-09943.jpg",
+          "/images/carga-seca/carga-seca-09941.jpg",
+          "/images/carga-seca/carga-seca-09940.jpg",
+          "/images/carga-seca/carga-seca-09939.jpg",
+          "/images/carga-seca/carga-seca-09937.jpg",
+          "/images/carga-seca/carga-seca-09934.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
@@ -361,8 +370,7 @@ const categorias = [
         nome: "Semirreboque Carga Seca 02 Eixos Distanciados (1+1)",
         iconeEixo: "truck-axle-1-1.svg",
         imagens: [
-          "/images/semirreboques.jpg",
-          "/images/semirreboques2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
@@ -379,8 +387,7 @@ const categorias = [
         nome: "Semirreboque Carga Seca 03 Eixos Juntos",
         iconeEixo: "truck-axle-3.svg",
         imagens: [
-          "/images/semirreboques.jpg",
-          "/images/semirreboques2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
@@ -397,8 +404,7 @@ const categorias = [
         nome: "Semirreboque Carga Seca 03 Eixos Distanciados (1+1+1)",
         iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
-          "/images/semirreboques.jpg",
-          "/images/semirreboques2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
@@ -415,8 +421,7 @@ const categorias = [
         nome: "Bitrem Carga Seca 02+02 Eixos",
         iconeEixo: "truck-axle-2-2.svg",
         imagens: [
-          "/images/semirreboques.jpg",
-          "/images/semirreboques2.jpg"
+
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
@@ -431,12 +436,13 @@ const categorias = [
       }
     ]
   },
+
+  // Linha Graneleira
   {
     nome: "Linha Graneleira",
     slug: "linha-graneleira",
     imagem: "/images/carreta-graneleira1.jpg",
     descricao: "Transporte de granéis com tampas altas e assoalho reforçado.",
-    video: "/videos/semirreboque_bau.mp4",
     informacoesTecnicas: [
       "Assoalho: Chapa xadrez 1/8\" (3,17mm)",
       "Tampas Graneleira: ACM 900+900mm",
@@ -500,7 +506,6 @@ const categorias = [
     slug: "linha-porta-container",
     imagem: "/images/vpc-buggy1.jpg",
     descricao: "Especializada em transporte de containers de 20 e 40 pés.",
-    video: "/videos/semirreboque_bau.mp4",
     informacoesTecnicas: [
       "Sistema de engate 'Lock' para containers",
       "Estrutura em aço de alta resistência",
