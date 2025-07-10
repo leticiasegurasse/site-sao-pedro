@@ -156,7 +156,7 @@ const categorias = [
       }
     ]
   },
-  
+
   // Linha Sider
   {
     nome: "Linha Sider",
@@ -345,12 +345,15 @@ const categorias = [
         iconeEixo: "truck-axle-2.svg",
         imagens: [
           "/images/carga-seca/carga-seca-09948.jpg",
-          "/images/carga-seca/carga-seca-09947.jpg",
           "/images/carga-seca/carga-seca-09945.jpg",
-          "/images/carga-seca/carga-seca-09943.jpg",
+          "/images/carga-seca/carga-seca-4698.jpg",
+          "/images/carga-seca/carga-seca-4701.jpg",
           "/images/carga-seca/carga-seca-09941.jpg",
+          "/images/carga-seca/carga-seca-4703.jpg",
           "/images/carga-seca/carga-seca-09940.jpg",
+          "/images/carga-seca/carga-seca-4705.jpg",
           "/images/carga-seca/carga-seca-09939.jpg",
+          "/images/carga-seca/carga-seca-4718.jpg",
           "/images/carga-seca/carga-seca-09937.jpg",
           "/images/carga-seca/carga-seca-09934.jpg"
         ],
@@ -501,11 +504,14 @@ const categorias = [
       }
     ]
   },
+
+  // Linha Porta Container (VPC)
   {
     nome: "Linha Porta Container (VPC)",
     slug: "linha-porta-container",
-    imagem: "/images/vpc-buggy1.jpg",
+    imagem: "/images/porta-container/porta-container-4759.jpg",
     descricao: "Especializada em transporte de containers de 20 e 40 pés.",
+    video:"/videos/LINHA PORTA CONTAINER.mp4",
     informacoesTecnicas: [
       "Sistema de engate 'Lock' para containers",
       "Estrutura em aço de alta resistência",
@@ -524,9 +530,20 @@ const categorias = [
         nome: "Semirreboque Porta Container 03 Eixos - 20 Pés",
         iconeEixo: "truck-axle-3.svg",
         imagens: [
-          "/images/vpc-buggy1.jpg",
-          "/images/vpc-buggy2.jpg",
-          "/images/vpc-buggy3.jpg"
+          "/images/porta-container/porta-container-4737.jpg",
+          "/images/porta-container/porta-container-4739.jpg",
+          "/images/porta-container/porta-container-4743.jpg",
+          "/images/porta-container/porta-container-4747.jpg",
+          "/images/porta-container/porta-container-4748.jpg",
+          "/images/porta-container/porta-container-4749.jpg",
+          "/images/porta-container/porta-container-4752.jpg",
+          "/images/porta-container/porta-container-4753.jpg",
+          "/images/porta-container/porta-container-4754.jpg",
+          "/images/porta-container/porta-container-4759.jpg",
+          "/images/porta-container/porta-container-4763.jpg",
+          "/images/porta-container/porta-container-4765.jpg",
+          "/images/porta-container/porta-container-4767.jpg",
+          "/images/porta-container/porta-container-4771.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
@@ -544,8 +561,6 @@ const categorias = [
         nome: "Semirreboque Porta Container 03 Eixos - 40 Pés",
         iconeEixo: "truck-axle-3.svg",
         imagens: [
-          "/images/vpc-buggy1.jpg",
-          "/images/vpc-buggy2.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
@@ -562,8 +577,6 @@ const categorias = [
         nome: "Super Bitrem Porta Container 03+03 Eixos - 40+40 Pés",
         iconeEixo: "truck-axle-3-3.svg",
         imagens: [
-          "/images/vpc-buggy1.jpg",
-          "/images/vpc-buggy2.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
@@ -578,12 +591,13 @@ const categorias = [
       }
     ]
   },
+
+  // Linha Base - Frigorífica / Carvoeira
   {
     nome: "Linha Base - Frigorífica / Carvoeira",
     slug: "linha-base",
     imagem: "/images/base-carvoeira1.jpg",
     descricao: "Chassis base para instalação de baús frigoríficos ou para transporte de carvão.",
-    video: "/videos/semirreboque_bau.mp4",
     informacoesTecnicas: [
       "Estrutura otimizada para instalação de equipamentos",
       "Opções de assoalho: Sem assoalho (para baú) ou Chapa 2,65mm",
@@ -604,8 +618,6 @@ const categorias = [
         iconeEixo: "truck-axle-3.svg",
         imagens: [
           "/images/base-carvoeira1.jpg",
-          "/images/base-carvoeira2.jpg",
-          "/images/base-carvoeira3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
@@ -622,8 +634,6 @@ const categorias = [
         nome: "Semirreboque Base 03 Eixos Distanciados (1+1+1)",
         iconeEixo: "truck-axle-1-1-1.svg",
         imagens: [
-          "/images/base-carvoeira1.jpg",
-          "/images/base-carvoeira2.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
@@ -639,8 +649,6 @@ const categorias = [
         nome: "Semirreboque Base 04 Eixos (1+3)",
         iconeEixo: "truck-axle-1-3.svg",
         imagens: [
-          "/images/base-carvoeira1.jpg",
-          "/images/base-carvoeira2.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
