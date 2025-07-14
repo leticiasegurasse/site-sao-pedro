@@ -468,9 +468,6 @@ const categorias = [
         nome: "Semirreboque Graneleiro 04 Eixos (1+3)",
         iconeEixo: "truck-axle-1-3.svg",
         imagens: [
-          "/images/carreta-graneleira1.jpg",
-          "/images/carreta-graneleira2.jpg",
-          "/images/carreta-graneleira3.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/SEMIRREBOQUE GRANELEIRO 04 EIXOS (1+3).pdf"
@@ -488,8 +485,6 @@ const categorias = [
         nome: "Super Bitrem Graneleiro 03+03 Eixos",
         iconeEixo: "truck-axle-3-3.svg",
         imagens: [
-          "/images/carreta-graneleira1.jpg",
-          "/images/carreta-graneleira2.jpg"
         ],
         documentos: {
           desenho: "/images/desenhos/SUPER BITREM GRANELEIRO 03+03 EIXOS.pdf"
