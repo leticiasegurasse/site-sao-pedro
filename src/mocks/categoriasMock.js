@@ -47,7 +47,7 @@ const categorias = [
               "/images/bau/bau-09914.jpg"
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE BAÚ 02 EIXOS JUNTOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -64,7 +64,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE BAÚ 02 EIXOS DISTÂNCIADOS (1+1).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -80,7 +80,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE BAÚ 03 EIXOS JUNTOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -96,7 +96,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE BAÚ 03 EIXOS DISTÂNCIADOS (1+1+1).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -112,7 +112,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE BAÚ 04 EIXOS (1+3).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -128,7 +128,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/BITREM BAÚ 02+02 EIXOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -144,7 +144,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BAÚ.pdf"
+          desenho: "/images/desenhos/SUPER BITREM BAÚ 03+03 EIXOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -200,7 +200,7 @@ const categorias = [
           "/images/sider/sider-09915.jpg"
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE SIDER 02 EIXOS JUNTOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -218,7 +218,7 @@ const categorias = [
 
         ],
         documentos: {
-            desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+            desenho: "/images/desenhos/SEMIRREBOQUE SIDER 02 EIXOS DISTÂNCIADOS (1+1).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -235,7 +235,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE SIDER 03 EIXOS JUNTOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -252,7 +252,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE SIDER 03 EIXOS DISTÂNCIADOS (1+1+1).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -269,7 +269,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE SIDER 04 EIXOS (1+3).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -286,7 +286,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+          desenho: "/images/desenhos/BITREM SIDER 02+02 EIXOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -303,7 +303,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA SIDER.pdf"
+          desenho: "/images/desenhos/SUPER BITREM SIDER 03+03 EIXOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -358,7 +358,7 @@ const categorias = [
           "/images/carga-seca/carga-seca-09934.jpg"
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE CARGA SECA 02 EIXOS JUNTOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -376,7 +376,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE CARGA SECA 02 EIXOS DISTÂNCIADOS (1+1).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -393,7 +393,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE CARGA SECA 03 EIXOS JUNTOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -410,7 +410,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE CARGA SECA 03 EIXOS DISTÂNCIADOS (1+1+1).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -427,7 +427,7 @@ const categorias = [
 
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/BITREM CARGA SECA 02+02 EIXOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -473,7 +473,7 @@ const categorias = [
           "/images/carreta-graneleira3.jpg"
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE GRANELEIRO 04 EIXOS (1+3).pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -492,7 +492,7 @@ const categorias = [
           "/images/carreta-graneleira2.jpg"
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA CARGA SECA - GRANELEIRA.pdf"
+          desenho: "/images/desenhos/SUPER BITREM GRANELEIRO 03+03 EIXOS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -546,7 +546,7 @@ const categorias = [
           "/images/porta-container/porta-container-4771.jpg"
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE PORTA CONTAINER 03 EIXOS JUNTOS - 20 PÉS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -563,7 +563,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE PORTA CONTAINER 03 EIXOS JUNTOS - 40 PÉS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
@@ -579,7 +579,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA PORTA CONTAINER (VPC).pdf"
+          desenho: "/images/desenhos/SUPER BITREM PORTA CONTAINER 03 EIXOS JUNTOS - 40+40 PÉS.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x4" },
@@ -620,7 +620,7 @@ const categorias = [
           "/images/base-carvoeira1.jpg",
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE 03 EIXOS JUNTOS - BASE FRIGORIFICA - CARVOEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -636,7 +636,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE 03 EIXOS DISTÂNCIADOS (1+1+1) - BASE FRIGORIFICA - CARVOEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "4x2 / 6x2" },
@@ -651,7 +651,7 @@ const categorias = [
         imagens: [
         ],
         documentos: {
-          desenho: "/images/desenhos/DESENHOS - LINHA BASE FRIGORIFICA - CARVOEIRA.pdf"
+          desenho: "/images/desenhos/SEMIRREBOQUE 04 EIXOS (1+3) - BASE FRIGORIFICA - CARVOEIRA.pdf"
         },
         especificacoes: [
           { chave: "Acoplamento", valor: "6x2" },
